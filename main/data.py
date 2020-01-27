@@ -50,7 +50,7 @@ def merge_data(data1, data2):
 	return data1
 
 def get_data_one(data_label = '', shuffle_seed = None, batch_size = 1, 
-	data_split = 'cv', cv_folds = '1/1',	truncate_to = None, training_ratio = 0.9,
+	data_split = 'cv', cv_folds = '1/1', truncate_to = None, training_ratio = 0.9,
 	molecular_attributes = False, use_fp = None):
 	'''This is a helper script to read the data file and return
 	the training and test data sets separately. This is to allow for an
@@ -162,6 +162,9 @@ def get_data_one(data_label = '', shuffle_seed = None, batch_size = 1,
 	data = []
 	with open(data_fpath, 'r') as data_fid:
 		reader = csv.reader(data_fid, delimiter = delimeter, quotechar = '"')
+		# Abraham, Bradley and Delaney start with column names
+		if data_label in ['delaney', 'delaney sol', 'abraham', 'abraham sol', 'abraham_oct', 'bradley_good', 'bradley']:
+			next(reader)
 		for row in reader:
 			data.append(row)
 	print('done')
@@ -191,7 +194,7 @@ def get_data_one(data_label = '', shuffle_seed = None, batch_size = 1,
 			mol = Chem.MolFromSmiles(row[smiles_index], sanitize = False)
 			Chem.SanitizeMol(mol)
 			
-			(mat_features, mat_adjacency, mat_specialbondtypes) = molToGraph(mol, molecular_attributes = molecular_attributes).dump_as_matrices()
+			(mat_features, mat_adjacency, mat_specialbondtypes) = molToGraph(mol, molecular_attributes=molecular_attributes).dump_as_matrices()
 			
 			# Are we trying to use Morgan FPs?
 			if use_fp == 'Morgan':
@@ -249,12 +252,12 @@ def get_data_one(data_label = '', shuffle_seed = None, batch_size = 1,
 		smiles_notrain = smiles[division:]
 
 		# Split notrain up
-		mols_val    = mols_notrain[:(len(mols_notrain) / 2)] # first half
-		y_val       = y_notrain[:(len(mols_notrain) / 2)] # first half
-		smiles_val  = smiles_notrain[:(len(mols_notrain) / 2)] # first half
-		mols_test   = mols_notrain[(len(mols_notrain) / 2):] # second half
-		y_test      = y_notrain[(len(mols_notrain) / 2):] # second half
-		smiles_test = smiles_notrain[(len(mols_notrain) / 2):] # second half
+		mols_val    = mols_notrain[:(len(mols_notrain) // 2)] # first half
+		y_val       = y_notrain[:(len(mols_notrain) // 2)] # first half
+		smiles_val  = smiles_notrain[:(len(mols_notrain) // 2)] # first half
+		mols_test   = mols_notrain[(len(mols_notrain) // 2):] # second half
+		y_test      = y_notrain[(len(mols_notrain) // 2):] # second half
+		smiles_test = smiles_notrain[(len(mols_notrain) // 2):] # second half
 		print('Training size: {}'.format(len(mols_train)))
 		print('Validation size: {}'.format(len(mols_val)))
 		print('Testing size: {}'.format(len(mols_test)))
@@ -308,7 +311,7 @@ def get_data_one(data_label = '', shuffle_seed = None, batch_size = 1,
 		smiles_test  = folded_smiles[this_fold]
 
 		# Define validation set as random 10% of training
-		training_indices = range(len(mols_train))
+		training_indices = list(range(len(mols_train)))
 		np.random.shuffle(training_indices)
 		split = int(len(training_indices) * training_ratio)
 		mols_train,   mols_val    = [mols_train[i] for i in training_indices[:split]],   [mols_train[i] for i in training_indices[split:]]

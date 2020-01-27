@@ -1,12 +1,12 @@
-import ConfigParser
+from configparser import ConfigParser
 import sys
 
 def read_config(fpath):
 	'''This function reads a configuration file and returns an equivalent dictionary'''
 
-	config = ConfigParser.SafeConfigParser()
+	config = ConfigParser()  #.SafeConfigParser() from python 3.2 SageConfigParser has been renamed to ConfigParser
 	with open(fpath, 'r') as fid:
-		config.readfp(fid)
+		config.read_file(fid)
 	return config._sections
 
 if __name__ == '__main__':

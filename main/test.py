@@ -23,6 +23,7 @@ def test_model(model, data, fpath, tstamp = 'no_time', batch_size = 128, return_
 		tstamp - timestamp to add to the testing
 		batch_size - batch_size to use while testing'''
 	
+	roc_auc_value = 0.0
 	# Create folder to dump testing info to
 	try:
 		os.makedirs(fpath)
@@ -36,6 +37,10 @@ def test_model(model, data, fpath, tstamp = 'no_time', batch_size = 128, return_
 	mols_train = train['mols']; y_train = train['y']; smiles_train = train['smiles']
 	mols_val   = val['mols'];   y_val   = val['y'];   smiles_val   = val['smiles']
 	mols_test  = test['mols'];  y_test  = test['y'];  smiles_test  = test['smiles']
+    
+	print('mols test {}'.format(len(mols_test)))
+	print('smiles test {}'.format(len(smiles_test)))
+	print('smiles unique {}'.format(len(set(smiles_test))))
 
 	y_train_pred = []
 	y_val_pred = []
@@ -94,6 +99,8 @@ def test_model(model, data, fpath, tstamp = 'no_time', batch_size = 128, return_
 				from sklearn.metrics import roc_auc_score, roc_curve, auc
 				roc_x, roc_y, _ = roc_curve(true, pred)
 				AUC = roc_auc_score(true, pred)
+				with open(os.path.join(fpath, set_label+"-rocauc.txt"), "w") as f:
+					f.write(f"{set_label} rocauc {AUC}\n")
 				plt.figure()
 				lw = 2
 				plt.plot(roc_x, roc_y, color='darkorange',
@@ -169,8 +176,13 @@ def test_model(model, data, fpath, tstamp = 'no_time', batch_size = 128, return_
 		raise ValueError('Nothing to evaluate?')
 
 	# Save
+	print('y_test_pred {}'.format(len(y_test_pred)))
+	print('mols test {}'.format(len(mols_test)))
+	print('smiles test {}'.format(len(smiles_test)))
+    
 	with open(test_fpath + '.test', 'w') as fid:
-		fid.write('{} tested {}, predicting {}\n\n'.format(fpath, tstamp, y_label))		
+		fid.write('ROC-AUC: {}\n\n'.format(roc_auc_value))
+		fid.write('{} tested {}, predicting {}\n\n'.format(fpath, tstamp, y_label))
 		fid.write('test entry\tsmiles\tactual\tpredicted\tactual - predicted\n')
 		for i in range(len(smiles_test)):
 			fid.write('{}\t{}\t{}\t{}\t{}\n'.format(i, 
@@ -195,7 +207,7 @@ def test_model(model, data, fpath, tstamp = 'no_time', batch_size = 128, return_
 			for i in range(num_targets):
 				parity_plot([x[i] for x in y_val], [x[0, i] for x in y_val_pred], 'val - ' + y_label[i])
 		else:
-			parity_plot(y_val, y_val_pred, 'test')
+			parity_plot(y_val, y_val_pred, 'val')
 	if y_test: 
 		if type(y_test[0]) != type(0.): 
 			num_targets = len(y_test[0])

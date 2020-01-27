@@ -26,6 +26,6 @@ def linreg(x, y):
 	x = np.array(x)
 	y = np.array(y)
 	x = x[:, np.newaxis]
-	a, _, _, _ = np.linalg.lstsq(x, y)
+	a, _, _, _ = np.linalg.lstsq(x, y, rcond=-1.)
 	r2 = q(y, (x * a)[:, 0])
 	return (r2, a)

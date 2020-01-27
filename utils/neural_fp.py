@@ -53,9 +53,9 @@ class Graph():
 
 		# Bad input handling
 		if not self.nodes:
-			raise(ValueError, 'Error generating tensor for graph with no nodes')
+			raise ValueError('Error generating tensor for graph with no nodes')
 		if not self.edges:
-			raise(ValueError, 'Need at least one bond!')
+			raise ValueError('Need at least one bond!')
 
 		N_nodes = len(self.nodes)
 		N_features = sizeAttributeVector(molecular_attributes = self.molecular_attributes)
@@ -85,9 +85,9 @@ class Graph():
 	def dump_as_matrices(self):
 		# Bad input handling
 		if not self.nodes:
-			raise(ValueError, 'Error generating tensor for graph with no nodes')
+			raise ValueError('Error generating tensor for graph with no nodes')
 		if not self.edges:
-			raise(ValueError, 'Need at least one bond!')
+			raise ValueError('Need at least one bond!')
 
 		N_nodes = len(self.nodes)
 		F_a, F_b = sizeAttributeVectors(molecular_attributes = self.molecular_attributes)

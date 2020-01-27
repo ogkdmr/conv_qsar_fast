@@ -44,7 +44,8 @@ if __name__ == '__main__':
 	print('...building model')
 	try:
 		kwargs = config['ARCHITECTURE']
-		del kwargs['__name__'] #  from configparser
+		if '__name__' in kwargs:  # often it does not exist and raises error
+			del kwargs['__name__'] #  from configparser
 		if 'batch_size' in config['TRAINING']:
 			kwargs['padding'] = int(config['TRAINING']['batch_size']) > 1
 		if 'embedding_size' in kwargs: 
@@ -133,11 +134,15 @@ if __name__ == '__main__':
 		model.load_weights(weights_fpath)
 
 		for j in tqdm(range(len(mols_train))):
-			single_mol_as_array = np.array(mols_train[j:j+1])
+			# single_mol_as_array = np.array(mols_train[j:j+1])  # old
+			atom_f, adj_mat, bond_f = mols_train[j:j + 1][0]  # tuple of len 3 (atom_f, adj_mat, bond_f)
+			single_mol_as_array = [np.reshape(atom_f, newshape=(1,)+atom_f.shape),
+								   np.reshape(adj_mat, newshape=(1,)+adj_mat.shape),
+								   np.reshape(bond_f, newshape=(1,)+bond_f.shape)]  # now it's a list, and dimensions match
 			single_y_as_array = np.array(y_train[j:j+1])
 			spred = model.predict_on_batch(single_mol_as_array)
 			if num_targets == 1:
-				y_train_pred[j] += spred
+				y_train_pred[j] += spred[0]  # because we get a batch of one example
 			else:
 				y_train_pred[j,:] += spred.flatten()
 
