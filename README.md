@@ -1,8 +1,23 @@
 # conv_qsar_fast
-QSAR/QSPR using descriptor-free molecular embedding
+QSAR/QSPR using descriptor-free molecular embedding, updated for python 3
 
 ## Requirements
 This code relies on [Keras](http://keras.io/) for the machine learning framework, [Theano](http://deeplearning.net/software/theano/) for computations as its back-end, and [RDKit](http://www.rdkit.org/) for parsing molecules from SMILES strings. Plotting is done in [matplotlib](http://matplotlib.org/). All other required packages should be dependencies of Keras, Theano, or RDKit.
+
+- python 3.7.6
+- tensorflow 1.14.0
+- keras 2.2.4
+- theano 1.0.4
+- rdkit 2019.09.3.0
+
+Full copy of environment is listed in directory `environment`
+
+
+## Issues
+
+Even though result on TOX21 are similar to those in the paper, the model does not learn anything on Abraham, Bradley nor Delaney.
+Concensus voting does not work. Learning on fingerprints (ECFP) does not work.
+
 
 ## Basic use
 This code implements the tensor-based convolutional embedding strategy described in __placeholder__ for QSAR/QSPR tasks. The model architecture, training schedule, and data source are defined in a configuration file and trained using a cross-validation (CV). The basic architecture is as follows:
