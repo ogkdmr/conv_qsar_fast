@@ -190,6 +190,6 @@ if __name__ == '__main__':
 		else:
 			stamp = 'baseline'
 		print('...testing model')
-		data_withresiduals = test_model(model, data, fpath, tstamp = stamp,
+		data_withresiduals, _, _ = test_model(model, data, fpath, tstamp = stamp,
 			batch_size = int(config['TRAINING']['batch_size']))
 		print('...tested model')

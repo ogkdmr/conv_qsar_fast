@@ -280,17 +280,19 @@ if __name__ == '__main__':
 				###################################################################################
 
 				print('...testing model')
-				test_valMSE = test_model(model, this_data, fpath, tstamp = tstamp + '_val',
+				_, mse, _ = test_model(model, this_data, fpath, tstamp = tstamp + '_val',
 					batch_size = int(config['TRAINING']['batch_size']),
 					return_test_MSE = True)
+				test_valMSE = mse['test'][0]
 				print('...tested model')
 
 				all_conditions_valMSE[conditionlabel] += test_valMSE
 
 				print('...testing model')
-				test_MSE = test_model(model, data, fpath, tstamp = tstamp + '_test',
+				_, mse, _ = test_model(model, data, fpath, tstamp = tstamp + '_test',
 					batch_size = int(config['TRAINING']['batch_size']),
 					return_test_MSE = True)
+				test_MSE = mse['test'][0]
 				print('...tested model')
 				all_conditions_testMSE[conditionlabel] += test_MSE
 

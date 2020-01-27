@@ -49,9 +49,10 @@ def merge_data(data1, data2):
 
 	return data1
 
-def get_data_one(data_label = '', shuffle_seed = None, batch_size = 1, 
-	data_split = 'cv', cv_folds = '1/1', truncate_to = None, training_ratio = 0.9,
-	molecular_attributes = False, use_fp = None):
+
+def get_data_one(data_label='', shuffle_seed=None, batch_size=1,
+				 data_split='cv', cv_folds='1/1', truncate_to=None, training_ratio=0.9,
+				 molecular_attributes=False, use_fp=None):
 	'''This is a helper script to read the data file and return
 	the training and test data sets separately. This is to allow for an
 	already-trained model to be evaluated using the test data (i.e., which

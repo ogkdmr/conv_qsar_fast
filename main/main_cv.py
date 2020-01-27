@@ -203,7 +203,7 @@ if __name__ == '__main__':
 		###################################################################################
 
 		print('...testing model')
-		data_withresiduals = test_model(model, data, fpath, tstamp = tstamp,
+		data_withresiduals, _, _ = test_model(model, data, fpath, tstamp = tstamp,
 			batch_size = int(config['TRAINING']['batch_size']))
 		print('...tested model')
 

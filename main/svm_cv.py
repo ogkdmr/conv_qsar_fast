@@ -127,6 +127,6 @@ if __name__ == '__main__':
 		tstamp = datetime.datetime.utcnow().strftime('%m-%d-%Y_%H-%M')
 		# Need to define predict_on_batch to be compatible
 		model.predict_on_batch = model.predict
-		data_withresiduals = test_model(model, data, fpath, tstamp = tstamp,
+		data_withresiduals, _, _ = test_model(model, data, fpath, tstamp = tstamp,
 			batch_size = 1)
 		print('...tested model')
