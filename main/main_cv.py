@@ -41,18 +41,14 @@ if __name__ == '__main__':
 	data_kwargs = config['DATA']
 	if '__name__' in data_kwargs:
 		del data_kwargs['__name__'] #  from configparser
-	if 'batch_size' in config['TRAINING']:
-		data_kwargs['batch_size'] = int(config['TRAINING']['batch_size'])
-	if 'use_fp' in config['ARCHITECTURE']:
-		data_kwargs['use_fp'] = config['ARCHITECTURE']['use_fp']
+
+
+
 	if 'shuffle_seed' in data_kwargs:
 		data_kwargs['shuffle_seed'] = int(data_kwargs['shuffle_seed'])
 	else:
 		data_kwargs['shuffle_seed'] = int(time.time())
-	if 'truncate_to' in data_kwargs:
-		data_kwargs['truncate_to'] = int(data_kwargs['truncate_to'])
-	if 'training_ratio' in data_kwargs:
-		data_kwargs['training_ratio'] = float(data_kwargs['training_ratio'])
+
 	if 'molecular_attributes' in data_kwargs: 
 		data_kwargs['molecular_attributes'] = input_to_bool(data_kwargs['molecular_attributes'])
 

@@ -112,8 +112,6 @@ if __name__ == '__main__':
 		data_kwargs['shuffle_seed'] = int(time.time())
 	if 'truncate_to' in data_kwargs:
 		data_kwargs['truncate_to'] = int(data_kwargs['truncate_to'])
-	if 'training_ratio' in data_kwargs:
-		data_kwargs['training_ratio'] = float(data_kwargs['training_ratio'])
 	if 'molecular_attributes' in data_kwargs: 
 		data_kwargs['molecular_attributes'] = input_to_bool(data_kwargs['molecular_attributes'])
 	else:
