@@ -16,7 +16,7 @@ Full copy of environment is listed in directory `environment`
 ## Issues
 
 Even though result on TOX21 are similar to those in the paper, the model does not learn anything on Abraham, Bradley nor Delaney.
-Concensus voting does not work. Learning on fingerprints (ECFP) does not work.
+Learning on fingerprints (ECFP) does not work.
 
 
 ## Basic use
