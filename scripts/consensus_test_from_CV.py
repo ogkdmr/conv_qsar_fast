@@ -1,7 +1,3 @@
-from __future__ import print_function
-from conv_qsar_fast.utils.parsing import input_to_bool
-from conv_qsar_fast.utils.parse_cfg import read_config
-import conv_qsar_fast.utils.reset_layers as reset_layers
 import rdkit.Chem as Chem
 import numpy as np
 import datetime
@@ -10,13 +6,16 @@ import sys
 import os
 import time
 from tqdm import tqdm
+from distutils.util import strtobool
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 from conv_qsar_fast.main.core import build_model, train_model, save_model
-from conv_qsar_fast.main.test import test_model, test_embeddings_demo
+from conv_qsar_fast.main.test import test_model, test_embeddings_demo, rocauc_plot, parity_plot
 from conv_qsar_fast.main.data import get_data_full
+from conv_qsar_fast.utils.parse_cfg import read_config
+import conv_qsar_fast.utils.reset_layers as reset_layers
 
 if __name__ == '__main__':
 	if len(sys.argv) < 2:
@@ -46,8 +45,6 @@ if __name__ == '__main__':
 		kwargs = config['ARCHITECTURE']
 		if '__name__' in kwargs:  # often it does not exist and raises error
 			del kwargs['__name__'] #  from configparser
-		if 'batch_size' in config['TRAINING']:
-			kwargs['padding'] = int(config['TRAINING']['batch_size']) > 1
 		if 'embedding_size' in kwargs: 
 			kwargs['embedding_size'] = int(kwargs['embedding_size'])
 		if 'hidden' in kwargs: 
@@ -56,17 +53,13 @@ if __name__ == '__main__':
 			kwargs['hidden2'] = int(kwargs['hidden2'])
 		if 'depth' in kwargs: 
 			kwargs['depth'] = int(kwargs['depth'])
-		if 'scale_output' in kwargs: 
-			kwargs['scale_output'] = float(kwargs['scale_output'])
 		if 'dr1' in kwargs:
 			kwargs['dr1'] = float(kwargs['dr1'])
 		if 'dr2' in kwargs:
 			kwargs['dr2'] = float(kwargs['dr2'])
 		if 'output_size' in kwargs:
 			kwargs['output_size'] = int(kwargs['output_size'])
-		if 'sum_after' in kwargs:
-			kwargs['sum_after'] = input_to_bool(kwargs['sum_after'])
-		 
+
 		if 'molecular_attributes' in config['DATA']:
 			kwargs['molecular_attributes'] = config['DATA']['molecular_attributes']
 
@@ -84,19 +77,37 @@ if __name__ == '__main__':
 	if '__name__' in data_kwargs:
 		del data_kwargs['__name__'] #  from configparser
 
-	if 'shuffle_seed' in data_kwargs:
-		data_kwargs['shuffle_seed'] = int(data_kwargs['shuffle_seed'])
-	else:
-		data_kwargs['shuffle_seed'] = int(time.time())
+	if 'molecular_attributes' in data_kwargs:
+		data_kwargs['molecular_attributes'] = strtobool(data_kwargs['molecular_attributes'])
 
-	if 'molecular_attributes' in data_kwargs: 
-		data_kwargs['molecular_attributes'] = input_to_bool(data_kwargs['molecular_attributes'])
-	
-	# Force all data to be "training" data
-	data_kwargs['data_split'] = 'ratio'
-	data_kwargs['training_ratio'] = 1.0
-	data_kwargs['data_label'] += '-test'
-	data = get_data_full(**data_kwargs)
+	if 'smiles_index' in data_kwargs:
+		data_kwargs['smiles_index'] = int(data_kwargs['smiles_index'])
+
+	if 'y_index' in data_kwargs:
+		data_kwargs['y_index'] = int(data_kwargs['y_index'])
+
+	if 'skipline' in data_kwargs:
+		data_kwargs['skipline'] = strtobool(data_kwargs['skipline'])
+
+	# In the original code the whole dataset was used for testing consensus
+	# for now I'll leave it, TODO: change it in the future
+	if strtobool(data_kwargs['cv']):
+		fold_keys = [key for key in data_kwargs if "fold" in key]
+		one_data = []
+		for key in fold_keys:
+			one_data.append(data_kwargs[key])
+			del data_kwargs[key]
+	else:
+		one_data = [data_kwargs['train'], data_kwargs['val']]
+		del data_kwargs['train']
+		del data_kwargs['val']
+
+	# test set is always test set
+	one_data.append(data_kwargs['test'])
+	del data_kwargs['test']
+	del data_kwargs['cv']
+
+	data = get_data_full(train_paths=one_data, validation_path=[], test_path=[], **data_kwargs)
 
 	# Unpack
 	(train, val, test) = data
@@ -106,22 +117,18 @@ if __name__ == '__main__':
 	# mols_test  = test['mols'];  y_test  = test['y'];  smiles_test  = test['smiles']
 	y_label = train['y_label']
 
-	if type(y_train[0]) != type(0.0):
-		num_targets = y_train[0].shape[-1]
-	else:
-		num_targets = 1
-
-	y_train_pred = np.array([np.array([0.0 for t in range(num_targets)]) for z in mols_train])
+	y_train_pred = np.array([np.array([0.0 for t in range(1)]) for z in mols_train])
 	print(y_train_pred.shape)
 	# y_val_pred = np.array([0 for z in mols_val])
 	# y_test_pred = np.array([0 for z in mols_test])
 
-
 	ref_fpath = fpath
-	cv_folds = range(1, 6)
-	for cv_fold in cv_folds:
-		print('Using weights from CV fold {}'.format(cv_fold))
-		fpath = ref_fpath.replace('<this_fold>', str(cv_fold))
+	experiment_dir = os.path.dirname(fpath)
+	fold_dirs = [os.path.join(experiment_dir, dir) for dir in os.listdir(experiment_dir) if os.path.isdir(os.path.join(experiment_dir, dir))]
+
+	for cv_fold in fold_dirs:
+		print('Using weights from CV fold {}'.format(os.path.dirname(cv_fold)))
+		fpath = cv_fold
 
 		# Load weights
 		weights_fpath = fpath + '.h5'
@@ -135,59 +142,14 @@ if __name__ == '__main__':
 								   np.reshape(bond_f, newshape=(1,)+bond_f.shape)]  # now it's a list, and dimensions match
 			single_y_as_array = np.array(y_train[j:j+1])
 			spred = model.predict_on_batch(single_mol_as_array)
-			if num_targets == 1:
-				y_train_pred[j] += spred[0]  # because we get a batch of one example
-			else:
-				y_train_pred[j,:] += spred.flatten()
+			y_train_pred[j] += spred[0]  # because we get a batch of one example
+			# y_train_pred[j,:] += spred.flatten()
 
 	# Now divide by the number of folds to average predictions
-	y_train_pred = y_train_pred / float(len(cv_folds))
-
-	def round3(x):
-		return int(x * 1000) / 1000.0
-
-	test_fpath = os.path.dirname(ref_fpath)
-	def parity_plot(true, pred, set_label):
-		if len(true) == 0:
-			print('skipping parity plot for empty dataset')
-			return
-
-		try:
-			# Trim it to recorded values (not NaN)
-
-			true = np.array(true).flatten()
-			pred = np.array(pred).flatten()
-
-			pred = pred[~np.isnan(true)]
-			true = true[~np.isnan(true)]
-
-			true = np.array(true).flatten()
-			pred = np.array(pred).flatten()
-
-			# For TOX21
-			from sklearn.metrics import roc_auc_score, roc_curve, auc
-			roc_x, roc_y, _ = roc_curve(true, pred)
-			AUC = roc_auc_score(true, pred)
-			plt.figure()
-			lw = 2
-			plt.plot(roc_x, roc_y, color='darkorange',
-				lw = lw, label = 'ROC curve (area = %0.3f)' % AUC)
-			plt.plot([0, 1], [0, 1], color='navy', lw = lw, linestyle = '--')
-			plt.xlim([0.0, 1.0])
-			plt.ylim([0.0, 1.05])
-			plt.xlabel('False Positive Rate')
-			plt.ylabel('True Positive Rate')
-			plt.title('ROC for {}'.format(set_label))
-			plt.legend(loc = "lower right")
-			plt.savefig(os.path.join(test_fpath, ' {} ROC.png'.format(set_label)), bbox_inches = 'tight')
-			plt.clf()
-
-		except Exception as e:
-			print(e)
+	y_train_pred = y_train_pred / float(len(fold_dirs))
 
 	# Create plots for datasets
-	if num_targets != 1:
-		for i in range(num_targets):
-				parity_plot([x[i] for x in y_train], [x[i] for x in y_train_pred], 'leaderboard set (consensus) - ' + y_label[i])
-	else:
-		parity_plot(y_train, y_train_pred, 'leaderboard set (consensus)')
+	if strtobool(config['TEST']['calculate_parity']):
+		parity_plot(y_train, y_train_pred, '(consensus)', os.path.join(experiment_dir, "consensus"), y_label)
+	if strtobool(config['TEST']['calculate_rocauc']):
+		rocauc_plot(y_train, y_train_pred, '(consensus)', os.path.join(experiment_dir, "consensus"))

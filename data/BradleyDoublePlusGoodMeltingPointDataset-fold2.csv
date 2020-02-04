@@ -1,0 +1,485 @@
+key,name,smiles,mpC,csid,link,source,count,min,max,range
+16005,Nitrogen oxide,[O-][N+]#N,-90.8,923,http://msds.chem.ox.ac.uk/,academic website,2,-90.81,-90.8,0.01
+13317,"2,3,3-trimethyl-1-butene",C=C(C)C(C)(C)C,-110,11179,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-110,-109.9,0.1
+13499,3-thiaheptane,CCSCCCC,-95,12011,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-95.1,-95,0.1
+13629,"2,6-dimethylheptane",CC(C)CCCC(C)C,-103,13450,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-103,-102.9,0.1
+13283,5-methyl-2-hexyne,CC(C)CC#CC,-93,126201,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-93,-92.9,0.1
+13480,sec-butyl_acetate,CC(=O)OC(C)CC,-99,7472,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,-99,-98.9,0.1
+3149,3-(aminomethyl)pyridine,c1cc(cnc1)CN,-21,28777,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23634,Alfa Aesar,2,-21.1,-21,0.1
+3029,2-phenylethyl acetate,CC(=O)OCCc1ccccc1,-31,21105987,http://www.alfa.com/en/GP100W.pgm?DSSTK=B21238,Alfa Aesar,2,-31.1,-31,0.1
+15838,Hexadecane,CCCCCCCCCCCCCCCC,18,10540,http://msds.chem.ox.ac.uk/,academic website,4,18,18.1,0.1
+16152,Thioxomethanone,O=C=S,-139,9644,http://msds.chem.ox.ac.uk/,academic website,2,-139,-138.8,0.2
+13129,"1,cis-3-pentadiene",C=CC=C/C,-141,558883,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-141,-140.8,0.2
+17123,chlordiazepoxide,Clc1ccc2N=C(C[N+]([O-])=C(c2c1)c3ccccc3)NC,236,10248513,http://dx.doi.org/10.1021/ci700307p,Hughes LD; Palmer DS; Nigsch F and Mitchell JBO. 2008 Why are some properties more difficult to predict than others? A study of QSPR models of solubility; melting point and LogP. J. Chem. Inf. Model. 2008. 48 (1). pp 220?270,2,236,236.2,0.2
+28008,decachlorobiphenyl,C1(=C(C(=C(C(=C1Cl)Cl)Cl)Cl)Cl)C2=C(C(=C(C(=C2Cl)Cl)Cl)Cl)Cl,306,15484,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),4,305.8,306,0.2
+6378,alpha-methylstyrene,CC(=C)c1ccccc1,-23,7129,http://www.alfa.com/en/GP100W.pgm?DSSTK=L03609,Alfa Aesar,3,-23.2,-23,0.2
+164,1h-indene,c1ccc2c(c1)CC=C2,-2,6949,http://www.alfa.com/en/GP100W.pgm?DSSTK=L12665,Alfa Aesar,2,-2,-1.8,0.2
+3189,3-(trifluoromethyl)phenol,c1cc(cc(c1)O)C(F)(F)F,-2,7098,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12784,Alfa Aesar,2,-2,-1.8,0.2
+2917,2-methylbiphenyl,Cc1ccccc1c2ccccc2,0,12044,http://www.alfa.com/en/GP100W.pgm?DSSTK=L01312,Alfa Aesar,3,-0.2,0,0.2
+476,"1,4-diiodobutane",C(CCI)CI,6,11832,http://www.alfa.com/en/GP100W.pgm?DSSTK=A16216,Alfa Aesar,2,5.8,6,0.2
+5414,4'-methylpropiophenone,CCC(=O)c1ccc(cc1)C,7,20140,http://www.alfa.com/en/GP100W.pgm?DSSTK=B21673,Alfa Aesar,2,7,7.2,0.2
+15636,But-2-yn-1-ol,CC#CCO,-2.2,12450,http://msds.chem.ox.ac.uk/,academic website,3,-2.2,-2,0.2
+13330,"2,2-dimethylpentane",CC(C)(C)CCC,-124,11055,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-124,-123.8,0.2
+13450,"2,2-dichloropropane",CC(C)(Cl)Cl,-34,11170,http://www.questia.com/library/book/physical_properties_of_chemical_compounds_by_robert_rickert_dreisbach.jsp,Dreisbach R. R. Physical Properties of Chemical Compounds; Vol. III; American Chemical Society; Washington; 1961.,2,-34,-33.8,0.2
+13814,octyl_cyanide,CCCCCCCCC#N,-34,15846,http://www.questia.com/library/book/physical_properties_of_chemical_compounds_by_robert_rickert_dreisbach.jsp,Dreisbach R. R. Physical Properties of Chemical Compounds; Vol. III; American Chemical Society; Washington; 1961.,2,-34.2,-34,0.2
+13310,"3,4-dimethyl-trans-2-pentene",CC=C(/C)C(C)C,-124,553631,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-124.2,-124,0.2
+3214,"3,3-dimethyl-1-butene",CC(C)(C)C=C,-115,10737,http://www.alfa.com/en/GP100W.pgm?DSSTK=L08693,Alfa Aesar,3,-115.2,-115,0.2
+15387,3-Methylbutan-1-ol,CC(C)CCO,-117,29000,http://msds.chem.ox.ac.uk/,academic website,3,-117.2,-117,0.2
+7617,methyl 4-iodobenzoate,COC(=O)c1ccc(cc1)I,115,62484,http://www.alfa.com/en/GP100W.pgm?DSSTK=A19342,Alfa Aesar,3,114.8,115,0.2
+14789,(2E)-But-2-enedinitrile,N#CC=CC#N,97,553503,http://msds.chem.ox.ac.uk/,academic website,3,96.8,97,0.2
+15344,"3,3-Dimethylbut-1-yne",C#CC(C)(C)C,-78,12924,http://msds.chem.ox.ac.uk/,academic website,4,-78.2,-78,0.2
+6971,diphenylacetonitrile,c1ccc(cc1)C(C#N)c2ccccc2,74,6576,http://www.alfa.com/en/GP100W.pgm?DSSTK=L02404,Alfa Aesar,2,74,74.3,0.3
+14886,"1,1,1-Trifluoroethane",CC(F)(F)F,-111,9484,http://msds.chem.ox.ac.uk/,academic website,2,-111.3,-111,0.3
+13290,pentyl_cyanide,CCCCCC#N,-80,11846,http://www.questia.com/library/book/physical_properties_of_chemical_compounds_by_robert_rickert_dreisbach.jsp,Dreisbach R. R. Physical Properties of Chemical Compounds; Vol. III; American Chemical Society; Washington; 1961.,2,-80.3,-80,0.3
+6946,di-n-pentyl sulfide,CCCCCSCCCCC,-51,12810,http://www.alfa.com/en/GP100W.pgm?DSSTK=L04649,Alfa Aesar,2,-51.3,-51,0.3
+13426,propylcyclopentane,CCCC1CCCC1,-117,15438,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-117.3,-117,0.3
+13624,4-methyloctane,CC(CCC)CCCC,-113,15802,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-113.3,-113,0.3
+13632,"2,2-dimethyl-3-ethylpentane",CCC(CC)C(C)(C)C,-99,26068,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-99.3,-99,0.3
+636,"1,3,5-benzenetricarbonyl chloride",c1c(cc(cc1C(=O)Cl)C(=O)Cl)C(=O)Cl,36,70514,http://www.alfa.com/en/GP100W.pgm?DSSTK=L07255,Alfa Aesar,2,36,36.3,0.3
+1339,"2,4,4-trimethyl-2-pentene",CC(=CC(C)(C)C)C,-106,7581,http://www.alfa.com/en/GP100W.pgm?DSSTK=B20773,Alfa Aesar,3,-106.3,-106,0.3
+80,1-pentanethiol,CCCCCS,-76,7776,http://www.alfa.com/en/GP100W.pgm?DSSTK=L04330,Alfa Aesar,3,-76,-75.7,0.3
+3009,2-pentyne,CCC#CC,-109,11807,http://www.alfa.com/en/GP100W.pgm?DSSTK=L02973,Alfa Aesar,3,-109.3,-109,0.3
+15647,Butane-1-thiol,CCCCS,-116,7721,http://msds.chem.ox.ac.uk/,academic website,4,-116,-115.7,0.3
+15830,Heptanal,CCCCCCC=O,-43,7838,http://msds.chem.ox.ac.uk/,academic website,4,-43.3,-43,0.3
+15121,"2,2,4-Trimethylpentane",CC(C)CC(C)(C)C,-107,10445,http://msds.chem.ox.ac.uk/,academic website,4,-107.3,-107,0.3
+16172,Tridecane,CCCCCCCCCCCCC,-5,11882,http://msds.chem.ox.ac.uk/,academic website,4,-5.3,-5,0.3
+15783,Ethaneperoxoic acid,CC(=O)OO,0.1,6336,http://msds.chem.ox.ac.uk/,academic website,2,-0.2,0.1,0.3
+3738,3-bromopyridine,c1cc(cnc1)Br,-27,11783,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12894,Alfa Aesar,2,-27.3,-27,0.3
+14247,1-chlorodecane,CCCCCCCCCCCl,-31,13248,http://www.questia.com/library/book/physical_properties_of_chemical_compounds_by_robert_rickert_dreisbach.jsp,Dreisbach R. R. Physical Properties of Chemical Compounds; Vol. III; American Chemical Society; Washington; 1961.,2,-31.3,-31,0.3
+14680,"1,1,2-tribromoethane",BrC(Br)CBr,-29,59607,http://www.questia.com/library/book/physical_properties_of_chemical_compounds_by_robert_rickert_dreisbach.jsp,Dreisbach R. R. Physical Properties of Chemical Compounds; Vol. III; American Chemical Society; Washington; 1961.,2,-29.3,-29,0.3
+7343,iodobenzene,c1ccc(cc1)I,-31,11087,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12788,Alfa Aesar,3,-31.3,-31,0.3
+1965,2-amino-4-methylpyrimidine,Cc1ccnc(n1)N,160,7651,http://www.alfa.com/en/GP100W.pgm?DSSTK=A16081,Alfa Aesar,2,160,160.3,0.3
+14476,m-bromobenzamide,O=C(N)c1cc(Br)ccc1,155,81061,http://de.wikipedia.org/wiki/Beilsteins_Handbuch_der_Organischen_Chemie,Beilstein F. K.; Beilsteins Handbuch der Organischen Chemie. Springer; Berlin; 1972.,2,155,155.3,0.3
+440,"1,5-hexadiene",C=CCCC=C,-141,11110,http://www.alfa.com/en/GP100W.pgm?DSSTK=A13650,Alfa Aesar,3,-141,-140.7,0.3
+8858,metoclopramide,CCN(CC)CCNC(=O)c1cc(Cl)c(N)cc1OC,147,4024,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1304,5,147,147.3,0.3
+16174,Triethyl phosphate,CCOP(=O)(OCC)OCC,-56,6287,http://msds.chem.ox.ac.uk/,academic website,2,-56.4,-56,0.4
+19118,2-methyl-2-heptanol,CC(C)(O)CCCCC,-50.4,11741,http://www.srcinc.com/what-we-do/product.aspx?id=133,PHYSPROP,2,-50.4,-50,0.4
+1673,"2,5-dimethylthiophene",Cc1ccc(s1)C,-63,11998,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10869,Alfa Aesar,2,-63,-62.6,0.4
+13719,1-methyl-4-propylbenzene,CCCc1ccc(C)cc1,-64,13473,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-64,-63.6,0.4
+6934,di-n-butyl sulfoxide,CCCCS(=O)CCCC,33,15708,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23672,Alfa Aesar,2,32.6,33,0.4
+7200,ethyl phenylacetate,CCOC(=O)Cc1ccccc1,-29,13885245,http://www.alfa.com/en/GP100W.pgm?DSSTK=A19356,Alfa Aesar,2,-29.4,-29,0.4
+14912,"1,2,3-Trimethylbenzene",Cc1cccc(C)c1C,-25,10236,http://msds.chem.ox.ac.uk/,academic website,4,-25.4,-25,0.4
+1471,"2,4-dichlorobenzyl chloride",c1cc(c(cc1Cl)Cl)CCl,-3,6942,http://www.alfa.com/en/GP100W.pgm?DSSTK=A11435,Alfa Aesar,3,-3,-2.6,0.4
+8720,valerophenone,CCCCC(=O)c1ccccc1,-9,59482,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10525,Alfa Aesar,2,-9.4,-9,0.4
+7168,ethyl chloroformate,CCOC(=O)Cl,-81,10465,http://www.alfa.com/en/GP100W.pgm?DSSTK=L06311,Alfa Aesar,2,-81,-80.6,0.4
+16018,Nonadecanoic acid,O=C(O)CCCCCCCCCCCCCCCCCC,69,12071,http://msds.chem.ox.ac.uk/,academic website,2,69,69.4,0.4
+1124,"2,2-dichloroacetamide",C(C(=O)N)(Cl)Cl,99,12173,http://www.alfa.com/en/GP100W.pgm?DSSTK=L00315,Alfa Aesar,2,99,99.4,0.4
+13626,"2,4,4-trimethylhexane",CC(C)CC(C)(C)CC,-113,26066,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-113.4,-113,0.4
+13134,"1,trans-3-pentadiene",C=CC=CC,-87,56020,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-87.4,-87,0.4
+16649,Clozapine,CN1CCN(CC1)C2=Nc4cc(Cl)ccc4Nc3ccccc23,183.5,10442628,http://www.drugbank.ca/drugs/DB00363,DrugBank,3,183.5,183.9,0.4
+15631,Bromoethane,BrCC,-119,6092,http://msds.chem.ox.ac.uk/,academic website,5,-119,-118.6,0.4
+27979,cyclopropane,C1CC1,-127.15,6111,http://webbook.nist.gov/cgi/cbook.cgi?ID=C75194&Units=SI&Mask=7,NIST Web Book,3,-127.56,-127.15,0.41
+670,"1,2-dibromopropane",CC(CBr)Br,-55,6305,http://www.alfa.com/en/GP100W.pgm?DSSTK=B22994,Alfa Aesar,3,-55.49,-55,0.49
+15931,"N-(3-Aminopropyl)butane-1,4-diamine",NCCCNCCCCN,23.5,1071,http://msds.chem.ox.ac.uk/,academic website,2,23.5,24,0.5
+6049,6-acetamidohexanoic acid,CC(=O)NCCCCCC(=O)O,104,1928,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23623,Alfa Aesar,2,104,104.5,0.5
+14869,"1,1'-(2,2-Dichloroethane-1,1-diyl)bis(4-chlorobenzene)",Clc1ccc(cc1)C(C(Cl)Cl)c2ccc(Cl)cc2,109,6057,http://msds.chem.ox.ac.uk/,academic website,2,109,109.5,0.5
+8085,nitroethane,CC[N+](=O)[O-],-89,6338,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10855,Alfa Aesar,2,-89.5,-89,0.5
+6451,benzoguanamine,c1ccc(cc1)c2nc(nc(n2)N)N,227,6797,http://www.alfa.com/en/GP100W.pgm?DSSTK=B20157,Alfa Aesar,2,226.5,227,0.5
+15995,N-Hydroxybutan-2-imine,CC(CC)=NO,-29.5,7020,http://msds.chem.ox.ac.uk/,academic website,2,-30,-29.5,0.5
+4923,4-chloro-3-nitrobenzotrifluoride,c1cc(c(cc1C(F)(F)F)[N+](=O)[O-])Cl,-3,8151,http://www.alfa.com/en/GP100W.pgm?DSSTK=A11488,Alfa Aesar,2,-3,-2.5,0.5
+4038,3-iodopropionic acid,C(CI)C(=O)O,82,8524,http://www.alfa.com/en/GP100W.pgm?DSSTK=L02655,Alfa Aesar,2,81.5,82,0.5
+8788,carbutamide,CCCCNC(=O)NS(=O)(=O)c1ccc(N)cc1,144,9189,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1234,2,144,144.5,0.5
+8016,N-butyl formate,CCCCOC=O,-92,11125,http://www.alfa.com/en/GP100W.pgm?DSSTK=A13882,Alfa Aesar,2,-92,-91.5,0.5
+3895,3-ethyl-3-pentanol,CCC(CC)(CC)O,-13,11210,http://www.alfa.com/en/GP100W.pgm?DSSTK=L03025,Alfa Aesar,2,-13,-12.5,0.5
+14300,o-nitrophenyl_acetate,O=C(C)Oc1ccccc1[N+]([O-])=O,40,11397,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,2,40,40.5,0.5
+1225,"2,3,5-trimethylphenol",Cc1cc(c(c(c1)O)C)C,94,12244,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10745,Alfa Aesar,2,93.5,94,0.5
+12921,"9,10-dihydrophenanthrene",c1ccc2c(c1)CCc1ccccc12,34,12515,http://dx.doi.org/10.1021/ci0500132,Karthikeyan M.; Glen R.C.; Bender A. General melting point prediction based on a diverse compound dataset and artificial neural networks. J. Chem. Inf. Model.; 2005; 45(3); 581-4503,2,34,34.5,0.5
+1470,"2,4-dichlorobenzyl alcohol",c1cc(c(cc1Cl)Cl)CO,59,14918,http://www.alfa.com/en/GP100W.pgm?DSSTK=A13338,Alfa Aesar,2,59,59.5,0.5
+13306,3-ethyl-1-pentene,C=CC(CC)CC,-127,18792,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-127.5,-127,0.5
+14632,1-heptadecene,CCCCCCCCCCCCCCCC=C,11,21723,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,11,11.5,0.5
+137,1-methyl-1h-benzotriazole,Cn1c2ccccc2nn1,65,24133,http://www.alfa.com/en/GP100W.pgm?DSSTK=L00297,Alfa Aesar,2,64.5,65,0.5
+7365,isonicotinic acid n-oxide,c1c[n+](ccc1C(=O)O)[O-],270,24341,http://www.alfa.com/en/GP100W.pgm?DSSTK=L02425,Alfa Aesar,2,270,270.5,0.5
+15508,"5,5-Dimethylcyclohexane-1,3-dione",O=C1CC(=O)CC(C)(C)C1,148.5,29091,http://msds.chem.ox.ac.uk/,academic website,2,148,148.5,0.5
+13543,p-vinylphenol,C=Cc1ccc(O)cc1,73,56234,http://de.wikipedia.org/wiki/Beilsteins_Handbuch_der_Organischen_Chemie,Beilstein F. K.; Beilsteins Handbuch der Organischen Chemie. Springer; Berlin; 1972.,2,73,73.5,0.5
+17208,tetroxoprim,Nc2nc(N)ncc2Cc1cc(OC)c(OCCOC)c(OC)c1,154.5,58910,http://dx.doi.org/10.1021/ci700307p,Hughes LD; Palmer DS; Nigsch F and Mitchell JBO. 2008 Why are some properties more difficult to predict than others? A study of QSPR models of solubility; melting point and LogP. J. Chem. Inf. Model. 2008. 48 (1). pp 220?355,2,154,154.5,0.5
+1941,"2-amino-4,6-dichloropyrimidine",c1c(nc(nc1Cl)N)Cl,220,58968,http://www.alfa.com/en/GP100W.pgm?DSSTK=A11330,Alfa Aesar,2,220,220.5,0.5
+5405,4-methylbenzylamine,Cc1ccc(cc1)CN,12,59426,http://www.alfa.com/en/GP100W.pgm?DSSTK=A13768,Alfa Aesar,2,12,12.5,0.5
+2128,2-bromo-4'-chloroacetophenone,c1cc(ccc1C(=O)CBr)Cl,96,61599,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12607,Alfa Aesar,2,96,96.5,0.5
+8188,octaphenylcyclotetrasiloxane,c1ccc(cc1)[Si]2(O[Si](O[Si](O[Si](O2)(c3ccccc3)c4ccccc4)(c5ccccc5)c6ccccc6)(c7ccccc7)c8ccccc8)c9ccccc9,201,61642,http://www.alfa.com/en/GP100W.pgm?DSSTK=L06130,Alfa Aesar,2,200.5,201,0.5
+1356,"2,4,6,8-tetramethyl-2,4,6,8-tetravinylcyclotetrasiloxane",C[Si]1(O[Si](O[Si](O[Si](O1)(C)C=C)(C)C=C)(C)C=C)C=C,-43,68224,http://www.alfa.com/en/GP100W.pgm?DSSTK=L16645,Alfa Aesar,2,-43.5,-43,0.5
+4324,4-(methylthio)benzoic acid,CSc1ccc(cc1)C(=O)O,195,75095,http://www.alfa.com/en/GP100W.pgm?DSSTK=B25706,Alfa Aesar,2,194.5,195,0.5
+2397,2-chloro-5-nitrotoluene,Cc1cc(ccc1Cl)[N+](=O)[O-],43,75176,http://www.alfa.com/en/GP100W.pgm?DSSTK=L10832,Alfa Aesar,2,42.5,43,0.5
+1778,"2,6-difluorobenzamide",c1cc(c(c(c1)F)C(=O)N)F,147,78873,http://www.alfa.com/en/GP100W.pgm?DSSTK=A11685,Alfa Aesar,2,146.5,147,0.5
+7329,indole-3-carbonitrile,c1ccc2c(c1)c(c[nH]2)C#N,180,200562,http://www.alfa.com/en/GP100W.pgm?DSSTK=A16041,Alfa Aesar,2,180,180.5,0.5
+13318,trans-2-heptene,CC=CCCCC,-109,555074,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,-109.5,-109,0.5
+8885,piprozolin,CCOC(=O)C=C2SC(N1CCCCC1)C(=O)N2CC,86,4744588,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1331,2,86,86.5,0.5
+1296,"2,3-dihydrobenzo[b]furan",c1ccc2c(c1)CCO2,-21,21106522,http://www.alfa.com/en/GP100W.pgm?DSSTK=A11368,Alfa Aesar,2,-21.5,-21,0.5
+15507,"5-(4-Chlorophenyl)-6-ethylpyrimidine-2,4-diamine",CCc1nc(N)nc(N)c1c2ccc(Cl)cc2,233,4819,http://msds.chem.ox.ac.uk/,academic website,3,233,233.5,0.5
+8912,tyramine,NCCc1ccc(O)cc1,164,5408,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1358,3,164,164.5,0.5
+3001,2-nonanol,CCCCCCCC(C)O,-35,11861,http://www.alfa.com/en/GP100W.pgm?DSSTK=L06310,Alfa Aesar,3,-35.5,-35,0.5
+2557,2-ethyl-1-butene,CCC(=C)CC,-132,12430,http://www.alfa.com/en/GP100W.pgm?DSSTK=L11553,Alfa Aesar,3,-132,-131.5,0.5
+14929,"1,2-Oxathiolane 2,2-dioxide",O=S1(=O)CCCO1,32,13626,http://msds.chem.ox.ac.uk/,academic website,3,31.5,32,0.5
+8964,methdilazine,CN1CCC(C1)CN3c2ccccc2Sc4ccccc34,87,14009,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1410,3,87,87.5,0.5
+8893,propoxyphene,CCC(=O)OC(Cc1ccccc1)(C(C)CN(C)C)c2ccccc2,75,14592,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1339,3,75,75.5,0.5
+4156,3-nitrophenylacetic acid,c1cc(cc(c1)[N+](=O)[O-])CC(=O)O,119,15089,http://www.alfa.com/en/GP100W.pgm?DSSTK=B21540,Alfa Aesar,3,118.5,119,0.5
+13791,p-hydroxybenzamide,O=C(N)c1ccc(O)cc1,161,58563,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,161,161.5,0.5
+8816,febantel,COCC(=O)Nc2cc(Sc1ccccc1)ccc2N=C(NC(=O)OC)NC(=O)OC,129,4514715,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1262,3,129,129.5,0.5
+8982,primidone,CCC1(C(=O)NCNC1=O)c2ccccc2,281,4740,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1428,4,281,281.5,0.5
+28013,Deoxycorticosterone,C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2C(=O)CO)CCC4=CC(=O)CC[C@]34C,142,5932,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),4,141.5,142,0.5
+27514,2-Ethylanthraquinone,CCC1=CC2=C(C=C1)C(=O)C3=CC=CC=C3C2=O,109,6514,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),4,109,109.5,0.5
+15998,Nicotinamide,NC(=O)c1cccnc1,130,911,http://msds.chem.ox.ac.uk/,academic website,5,129.5,130,0.5
+28217,Lovastatin,CC[C@H](C)C(=O)O[C@H]1C[C@H](C=C2[C@H]1[C@H]([C@H](C=C2)C)CC[C@@H]3C[C@H](CC(=O)O3)O)C,175,48085,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),5,174.5,175,0.5
+16842,Nialamide,O=C(NNCCC(=O)NCc1ccccc1)c2ccncc2,151.6,4317,http://www.drugbank.ca/drugs/DB04820,DrugBank,2,151,151.6,0.6
+14870,"1,1'-(Dioxydipropane-2,2-diyl)dibenzene",CC(C)(OOC(C)(C)c1ccccc1)c2ccccc2,40,6389,http://msds.chem.ox.ac.uk/,academic website,2,40,40.6,0.6
+8064,N-hexacosane,CCCCCCCCCCCCCCCCCCCCCCCCCC,57,11901,http://www.alfa.com/en/GP100W.pgm?DSSTK=42461,Alfa Aesar,2,56.4,57,0.6
+15675,Cyanic iodide,IC#N,146,10046,http://msds.chem.ox.ac.uk/,academic website,2,146,146.7,0.7
+2549,2-ethoxybenzoic acid,CCOc1ccccc1C(=O)O,20,60586,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14758,Alfa Aesar,2,20,20.7,0.7
+4960,4-chlorobenzhydrol,c1ccc(cc1)C(c2ccc(cc2)Cl)O,60,8094,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23691,Alfa Aesar,2,60,60.75,0.75
+4061,3-methoxycatechol,COc1cccc(c1O)O,42,13033,http://www.alfa.com/en/GP100W.pgm?DSSTK=B20006,Alfa Aesar,2,42,42.8,0.8
+144,1-iodohexane,CCCCCCI,-75,12010,http://www.alfa.com/en/GP100W.pgm?DSSTK=A13784,Alfa Aesar,3,-75,-74.2,0.8
+4920,4-chloro-3-nitrobenzoic acid,c1cc(c(cc1C(=O)O)[N+](=O)[O-])Cl,182,7044,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12807,Alfa Aesar,3,182,182.8,0.8
+16051,"Penta-1,4-diene",C=CCC=C,-148,11099,http://msds.chem.ox.ac.uk/,academic website,3,-148.8,-148,0.8
+14824,"(4R,4aS,6R)-4,4a-Dimethyl-6-(prop-1-en-2-yl)-4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one",C=C(C)[C@@H]1CCC2=CC(=O)C[C@@H](C)[C@]2(C)C1,36,1064812,http://msds.chem.ox.ac.uk/,academic website,2,36,36.85,0.85
+13866,hexyl_acetate,O=C(C)OCCCCCC,-80,8568,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,-80.9,-80,0.9
+14018,"2,4-dihydroxybenzoic_acid",OC(=O)c1ccc(O)cc1O,225,1446,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,2,225,226,1
+27738,acephate,O=C(NP(=O)(OC)SC)C,88,1905,http://chemspider.com/1905,EPISuite-ChemSpider,2,88,89,1
+8925,acetohexamide,CC(=O)c1ccc(cc1)S(=O)(=O)NC(=O)NC2CCCCC2,188,1912,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1371,2,188,189,1
+17247,perazine,CN1CCN(CC1)CCCN2c4ccccc4Sc3ccccc23,53,4582,http://dx.doi.org/10.1021/ci700307p,Hughes LD; Palmer DS; Nigsch F and Mitchell JBO. 2008 Why are some properties more difficult to predict than others? A study of QSPR models of solubility; melting point and LogP. J. Chem. Inf. Model. 2008. 48 (1). pp 220?394,2,52,53,1
+8995,tirofiban,CCCCS(=O)(=O)NC(Cc2ccc(OCCCCC1CCNCC1)cc2)C(O)=O,223,5286,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1441,2,223,224,1
+1255,"2,3-dichlorobenzoic acid",c1cc(c(c(c1)Cl)Cl)C(=O)O,168,5562,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10522,Alfa Aesar,2,168,169,1
+21243,[1(r)-endo]-(+)-3-bromocampher,CC2(C)C1CCC2(C)C(=O)C1Br,76,6198,http://www.srcinc.com/what-we-do/product.aspx?id=133,PHYSPROP,2,76,77,1
+3774,3-chloro-2-methylaniline,Cc1c(cccc1Cl)N,2,6628,http://www.alfa.com/en/GP100W.pgm?DSSTK=A18221,Alfa Aesar,2,1,2,1
+16027,N-Phenylnaphthalen-1-amine,c1ccc3ccccc3c1Nc2ccccc2,61,6746,http://msds.chem.ox.ac.uk/,academic website,2,61,62,1
+2067,2-benzoylpyridine,c1ccc(cc1)C(=O)c2ccccn2,43,6771,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10857,Alfa Aesar,2,42,43,1
+14811,"(3,4-Dimethoxyphenyl)acetic acid",COc1cc(ccc1OC)CC(=O)O,98,6872,http://msds.chem.ox.ac.uk/,academic website,2,97,98,1
+15191,"2,6-Dichloro-4-(chloroimino)cyclohexa-2,5-dien-1-one",ClC1=CC(=NCl)C=C(Cl)C1=O,67,7275,http://msds.chem.ox.ac.uk/,academic website,2,66,67,1
+394,10-undecen-1-ol,C=CCCCCCCCCCO,-3,7893,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14002,Alfa Aesar,2,-3,-2,1
+276,1-bromohexadecane,CCCCCCCCCCCCCCCCBr,17,7921,http://www.alfa.com/en/GP100W.pgm?DSSTK=A15147,Alfa Aesar,2,17,18,1
+6327,acridine,c1ccc2c(c1)cc3ccccc3n2,109,8860,http://www.alfa.com/en/GP100W.pgm?DSSTK=L01657,Alfa Aesar,2,108,109,1
+1401,"2,4,6-trimethylphenol",Cc1cc(c(c(c1)C)O)C,72,10248,http://www.alfa.com/en/GP100W.pgm?DSSTK=A15041,Alfa Aesar,2,72,73,1
+10,1-tetralone,c1ccc2c(c1)CCCC2=O,7,10273,http://www.alfa.com/en/GP100W.pgm?DSSTK=A13303,Alfa Aesar,2,7,8,1
+2898,2-methyl-6-nitroaniline,Cc1cccc(c1N)[N+](=O)[O-],95,10824,http://www.alfa.com/en/GP100W.pgm?DSSTK=L01803,Alfa Aesar,2,95,96,1
+5569,4-pyridinemethanol,c1cnccc1CO,54,10988,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14698,Alfa Aesar,2,53,54,1
+2444,2-chloroacrylic acid,C=C(C(=O)O)Cl,65,11242,http://www.alfa.com/en/GP100W.pgm?DSSTK=L00350,Alfa Aesar,2,65,66,1
+1317,"2,3-dimethylbenzoic acid",Cc1cccc(c1C)C(=O)O,145,11289,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10383,Alfa Aesar,2,145,146,1
+3353,"3,4-dimethylbenzoic acid",Cc1ccc(cc1C)C(=O)O,166,11576,http://www.alfa.com/en/GP100W.pgm?DSSTK=A19260,Alfa Aesar,2,165,166,1
+7307,homophthalic anhydride,c1ccc2c(c1)CC(=O)OC2=O,142,12274,http://www.alfa.com/en/GP100W.pgm?DSSTK=A15538,Alfa Aesar,2,142,143,1
+1834,"2,6-di-tert-butyl-p-benzoquinone",CC(C)(C)C1=CC(=O)C=C(C1=O)C(C)(C)C,67,12336,http://www.alfa.com/en/GP100W.pgm?DSSTK=A13091,Alfa Aesar,2,66,67,1
+2738,2-hydroxybenzothiazole,c1ccc2c(c1)nc(s2)O,138,13036,http://www.alfa.com/en/GP100W.pgm?DSSTK=A16648,Alfa Aesar,2,138,139,1
+14295,mono-methyl_terephthalate,COC(=O)c1ccc(cc1)C(=O)O,221,14760,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,2,221,222,1
+1799,"2',6'-dimethoxyacetophenone",CC(=O)c1c(cccc1OC)OC,70,15435,http://www.alfa.com/en/GP100W.pgm?DSSTK=A16733,Alfa Aesar,2,69,70,1
+5855,5-chloro-2-nitrobenzoic acid,c1cc(c(cc1Cl)C(=O)O)[N+](=O)[O-],138,16358,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12493,Alfa Aesar,2,138,139,1
+7692,methyl phenyl sulfone,CS(=O)(=O)c1ccccc1,87,17347,http://www.alfa.com/en/GP100W.pgm?DSSTK=A11727,Alfa Aesar,2,86,87,1
+2678,2-furoic acid hydrazide,c1cc(oc1)C(=O)NN,79,17687,http://www.alfa.com/en/GP100W.pgm?DSSTK=A13630,Alfa Aesar,2,79,80,1
+15990,N-Ethyl-4-nitroaniline,CCNc1ccc(cc1)[N+]([O-])=O,96,18227,http://msds.chem.ox.ac.uk/,academic website,2,96,97,1
+5182,4-formylmorpholine,C1COCCN1C=O,22,19231,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23315,Alfa Aesar,2,21,22,1
+15922,Methylene bis(thiocyanate),N#CSCSC#N,106,21349,http://msds.chem.ox.ac.uk/,academic website,2,105,106,1
+7335,indole-5-carbonitrile,c1cc2c(cc[nH]2)cc1C#N,106,25604,http://www.alfa.com/en/GP100W.pgm?DSSTK=B21810,Alfa Aesar,2,106,107,1
+8994,thenaldine,CN1CCC(CC1)N(Cc2cccs2)c3ccccc3,95,25957,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1440,2,95,96,1
+539,"1,4,8,11-tetraazacyclotetradecane",C1CNCCNCCCNCCNC1,186,58489,http://www.alfa.com/en/GP100W.pgm?DSSTK=A11516,Alfa Aesar,2,185,186,1
+6975,diphenylcarbamyl chloride,c1ccc(cc1)N(c2ccccc2)C(=O)Cl,84,59164,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23116,Alfa Aesar,2,83,84,1
+14563,m-chlorobenzophenone,O=C(c1cc(Cl)ccc1)c2ccccc2,82,59487,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,2,82,83,1
+7028,ethoxymethylenemalononitrile,CCOC=C(C#N)C#N,65,60497,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14412,Alfa Aesar,2,65,66,1
+501,"1,4-dibenzyloxybenzene",c1ccc(cc1)COc2ccc(cc2)OCc3ccccc3,127,62525,http://www.alfa.com/en/GP100W.pgm?DSSTK=B24942,Alfa Aesar,2,127,128,1
+8257,phenyl carbamate,c1ccc(cc1)OC(=O)N,151,62532,http://www.alfa.com/en/GP100W.pgm?DSSTK=L00944,Alfa Aesar,2,150,151,1
+5473,4-nitrobenzophenone,c1ccc(cc1)C(=O)c2ccc(cc2)[N+](=O)[O-],137,64003,http://www.alfa.com/en/GP100W.pgm?DSSTK=B20405,Alfa Aesar,2,137,138,1
+894,(4-bromobutoxy)benzene,c1ccc(cc1)OCCCCBr,42,64147,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14956,Alfa Aesar,2,41,42,1
+7921,N-benzylbenzamide,c1ccc(cc1)CNC(=O)c2ccccc2,106,66512,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12204,Alfa Aesar,2,105,106,1
+2088,2-biphenylmethanol,c1ccc(cc1)c2ccccc2CO,49,68709,http://www.alfa.com/en/GP100W.pgm?DSSTK=L07094,Alfa Aesar,2,49,50,1
+8382,quinoline-4-carboxaldehyde,c1ccc2c(c1)c(ccn2)C=O,50,70450,http://www.alfa.com/en/GP100W.pgm?DSSTK=L20203,Alfa Aesar,2,50,51,1
+1117,"2,2-bis(hydroxymethyl)propionic acid",CC(CO)(CO)C(=O)O,189,70865,http://www.alfa.com/en/GP100W.pgm?DSSTK=L14014,Alfa Aesar,2,189,190,1
+610,"1,3-bis(diphenylphosphino)propane",c1ccc(cc1)P(CCCP(c2ccccc2)c3ccccc3)c4ccccc4,61,73276,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12931,Alfa Aesar,2,60,61,1
+3699,3-bromo-4-methylaniline,Cc1ccc(cc1Br)N,27,74169,http://www.alfa.com/en/GP100W.pgm?DSSTK=B24670,Alfa Aesar,2,26,27,1
+5434,4-n-decylaniline,CCCCCCCCCCc1ccc(cc1)N,24,83338,http://www.alfa.com/en/GP100W.pgm?DSSTK=L08620,Alfa Aesar,2,24,25,1
+14382,4-chloro-2-methoxybenzoic_acid,OC(=O)c1ccc(Cl)cc1OC,146,84565,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,2,146,147,1
+24620,"1,3-propanediol, 2-nitro-1-phenyl-, diacetate (e",[O-][N+](=O)C(COC(C)=O)C(OC(C)=O)c1ccccc1,71,96000,http://www.srcinc.com/what-we-do/product.aspx?id=133,PHYSPROP,2,70,71,1
+6771,D-galactose,C([C@H]([C@@H]([C@@H]([C@H](C=O)O)O)O)O)O,166,2301265,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12813,Alfa Aesar,2,166,167,1
+6931,di-n-butyl sebacate,CCCCOC(=O)CCCCCCCCC(=O)OCCCC,-11,13837584,http://www.alfa.com/en/GP100W.pgm?DSSTK=A18231,Alfa Aesar,2,-11,-10,1
+16000,Nicotinonitrile,N#Cc1cccnc1,50,78,http://msds.chem.ox.ac.uk/,academic website,3,50,51,1
+27680,4-hydroxybenzaldehyde,O=Cc1ccc(O)cc1,118,123,http://www.alfa.com/content/msds/USA/A13580.pdf,Alfa Aesar,3,117,118,1
+8780,bufexamac,CCCCOc1ccc(CC(=O)NO)cc1,153,2372,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1226,3,153,154,1
+15268,2-Iodoacetamide,ICC(N)=O,94,3596,http://msds.chem.ox.ac.uk/,academic website,3,93.5,94.5,1
+8958,maprotiline,CNCCCC13CCC(c2ccccc12)c4ccccc34,92,3871,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1404,3,92,93,1
+27625,"3,4-Dichlorobenzoic acid",C1=CC(=C(C=C1C(=O)O)Cl)Cl,208,5612,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),3,207,208,1
+15743,Dimethyl sulfone,CS(C)(=O)=O,109,5978,http://msds.chem.ox.ac.uk/,academic website,3,109,110,1
+8196,o-terphenyl,c1ccc(cc1)c2ccccc2c3ccccc3,57,6508,http://www.alfa.com/en/GP100W.pgm?DSSTK=A19680,Alfa Aesar,3,56,57,1
+20878,mcpp,Clc1cc(C)c(OC(C)C(=O)O)cc1,94,6886,http://www.srcinc.com/what-we-do/product.aspx?id=133,PHYSPROP,3,94,95,1
+15275,2-Methoxy-5-nitroaniline,Nc1cc(ccc1OC)[N+]([O-])=O,118,7167,http://msds.chem.ox.ac.uk/,academic website,3,117,118,1
+16104,Pyrimidine,c1ccncn1,21,8903,http://msds.chem.ox.ac.uk/,academic website,3,21,22,1
+2867,2-methyl-2-pentanol,CCCC(C)(C)O,-103,11056,http://www.alfa.com/en/GP100W.pgm?DSSTK=A19090,Alfa Aesar,3,-103,-102,1
+13476,1-methylcyclohexanol,CC1(O)CCCCC1,26,11063,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,25,26,1
+14649,"2,5-dibromotoluene",Brc1ccc(Br)c(C)c1,5,11511,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,5,6,1
+7549,methyl 3-bromobenzoate,COC(=O)c1cccc(c1)Br,32,11573,http://www.alfa.com/en/GP100W.pgm?DSSTK=A16174,Alfa Aesar,3,32,33,1
+14305,methyl_4-nitrobenzoate,O=[N+]([O-])c1ccc(cc1)C(=O)OC,96,11586,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,95,96,1
+5530,4-n-propylphenol,CCCc1ccc(cc1)O,21,12060,http://www.alfa.com/en/GP100W.pgm?DSSTK=A15342,Alfa Aesar,3,21,22,1
+15768,Dodecanedioic acid,O=C(O)CCCCCCCCCCC(=O)O,129,12213,http://msds.chem.ox.ac.uk/,academic website,3,128,129,1
+15068,1-Methylpyrrolidin-2-one,O=C1CCCN1C,-23,12814,http://msds.chem.ox.ac.uk/,academic website,3,-24,-23,1
+14494,3-chloro-2-nitrobenzoic_acid,O=[N+]([O-])c1c(cccc1Cl)C(=O)O,237,19663,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,237,238,1
+2045,2-aminobutane,CCC(C)N,-104,23255,http://www.alfa.com/en/GP100W.pgm?DSSTK=A13014,Alfa Aesar,3,-105,-104,1
+14427,p-bromophenylacetonitrile,Brc1ccc(CC#N)cc1,48,25968,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,47,48,1
+8785,capobenicacid,COc1cc(cc(OC)c1OC)C(=O)NCCCCCC(O)=O,121,28425,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1231,3,121,122,1
+184,"1h-1,2,3-triazole",c1cnn[nH]1,24,60839,http://www.alfa.com/en/GP100W.pgm?DSSTK=A16999,Alfa Aesar,3,23,24,1
+13742,m-toluamide,Cc1cccc(c1)C(=O)N,96,62466,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,95,96,1
+14030,"1,3-phenylenediacetonitrile",N#CCc1cccc(c1)CC#N,33,62583,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,33,34,1
+14451,"2,4,6-trimethoxybenzaldehyde",COc1cc(cc(OC)c1C=O)OC,120,63211,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,120,121,1
+661,"1,2-diethoxybenzene",CCOc1ccccc1OCC,44,67466,http://www.alfa.com/en/GP100W.pgm?DSSTK=A17283,Alfa Aesar,3,43,44,1
+13977,"2,6-dimethoxytoluene",Cc1c(cccc1OC)OC,40,72054,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,39,40,1
+3571,3-acetylbenzonitrile,CC(=O)c1cccc(c1)C#N,99,72466,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10841,Alfa Aesar,3,98,99,1
+14056,p-chlorobenzyl_mercaptan,SCc1ccc(Cl)cc1,19,72625,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,19,20,1
+14625,o-iodobenzyl_alcohol,OCc1ccccc1I,92,96816,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,91,92,1
+7275,griseofulvin,C[C@@H]1CC(=O)C=C([C@]12C(=O)c3c(cc(c(c3O2)Cl)OC)OC)OC,219,389934,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23521,Alfa Aesar,3,219,220,1
+15132,"2,2'-Iminodiethanol",OCCNCCO,28,13835604,http://msds.chem.ox.ac.uk/,academic website,3,28,29,1
+15167,"2,4-Difluoro-1-nitrobenzene",Fc1cc(F)ccc1[N+](=O)[O-],9,21106036,http://msds.chem.ox.ac.uk/,academic website,3,9,10,1
+13512,pinacol,CC(C)(O)C(C)(C)O,43,21109330,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,43,44,1
+13955,2-chlorobenzyl_cyanide,Clc1ccccc1CC#N,24,21111776,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,23,24,1
+16082,Propan-1-ol,CCCO,-127,1004,http://msds.chem.ox.ac.uk/,academic website,4,-127,-126,1
+15707,Dibromomethane,BrCBr,-52,2916,http://msds.chem.ox.ac.uk/,academic website,4,-53,-52,1
+16108,Resorcinol,Oc1cccc(O)c1,111,4878,http://msds.chem.ox.ac.uk/,academic website,4,110,111,1
+15802,Ethyl carbamate,NC(=O)OCC,48,5439,http://msds.chem.ox.ac.uk/,academic website,4,48,49,1
+15129,"2,2-Dimethylbutane",CC(C)(C)CC,-100,6163,http://msds.chem.ox.ac.uk/,academic website,4,-100,-99,1
+14890,"1,1,2,2-Tetrachloroethane",ClC(Cl)C(Cl)Cl,-43,6342,http://msds.chem.ox.ac.uk/,academic website,4,-44,-43,1
+15721,Diethyl oxalate,CCOC(=O)C(=O)OCC,-41,6998,http://msds.chem.ox.ac.uk/,academic website,4,-41,-40,1
+15663,Chlorobenzene,Clc1ccccc1,-45,7676,http://msds.chem.ox.ac.uk/,academic website,4,-46,-45,1
+16017,Nonadecane,CCCCCCCCCCCCCCCCCCC,33,11895,http://msds.chem.ox.ac.uk/,academic website,4,32,33,1
+14132,"3,5-dimethoxybenzaldehyde",COc1cc(cc(OC)c1)C=O,47,73763,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,4,46,47,1
+14131,"3,4-dimethoxybenzaldehyde",COc1cc(ccc1OC)C=O,44,21106008,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,4,43,44,1
+8795,cimetidine,CNC(NCCSCc1nc[nH]c1C)=NC#N,141,2654,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1241,5,141,142,1
+15680,Cyclohexanamine,NC1CCCCC1,-18,7677,http://msds.chem.ox.ac.uk/,academic website,5,-18,-17,1
+28400,Pentachlorobenzene,C1=C(C(=C(C(=C1Cl)Cl)Cl)Cl)Cl,85,21106570,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),5,85,86,1
+28532,Sulfacetamide,CC(=O)NS(=O)(=O)C1=CC=C(C=C1)N,182,5129,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),7,182,183,1
+15870,Isonicotinohydrazide,O=C(NN)c1ccncc1,171,3635,http://msds.chem.ox.ac.uk/,academic website,8,171,172,1
+28206,Ketoprofen,CC(C1=CC(=CC=C1)C(=O)C2=CC=CC=C2)C(=O)O,93,3693,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),9,93,94,1
+27849,Benzoic acid,C1=CC=C(C=C1)C(=O)O,122,238,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),14,122,123,1
+28436,phenol,C1=CC=C(C=C1)O,41,971,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),7,40.9,42,1.1
+13111,butane,CCCC,-138,7555,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,4,-138.34,-137.15,1.19
+27655,4-Aminobenzoic acid,C1=CC(=CC=C1C(=O)O)N,189,953,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),11,187.8,189,1.2
+82,1-pentadecene,CCCCCCCCCCCCCC=C,-4,24142,http://www.alfa.com/en/GP100W.pgm?DSSTK=H53516,Alfa Aesar,3,-4,-2.8,1.2
+16054,Pentadecafluorooctanoic acid,FC(F)(C(F)(F)C(=O)O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,55.5,9180,http://msds.chem.ox.ac.uk/,academic website,2,54.3,55.5,1.2
+16157,Triacontane,CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC,66,12018,http://msds.chem.ox.ac.uk/,academic website,3,65.8,67,1.2
+7737,m-toluidine,Cc1cccc(c1)N,-30,13860692,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14058,Alfa Aesar,3,-31.3,-30,1.3
+12815,"2,2'-binaphthalene",c1ccc2cc(ccc2c1)c1ccc2ccccc2c1,187,62381,http://dx.doi.org/10.1021/ci0500132,Karthikeyan M.; Glen R.C.; Bender A. General melting point prediction based on a diverse compound dataset and artificial neural networks. J. Chem. Inf. Model.; 2005; 45(3); 581-4397,2,187,188.3,1.3
+1996,"2-amino-5-ethyl-1,3,4-thiadiazole",CCc1nnc(s1)N,200,24633,http://www.alfa.com/en/GP100W.pgm?DSSTK=L06915,Alfa Aesar,2,200,201.35,1.35
+967,2-(4-chlorophenoxy)isobutyric acid,CC(C)(C(=O)O)Oc1ccc(cc1)Cl,120,2695,http://www.alfa.com/en/GP100W.pgm?DSSTK=A17624,Alfa Aesar,2,118.5,120,1.5
+2750,2-hydroxyquinoline,c1ccc2c(c1)ccc(=O)[nH]2,198,5816,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23064,Alfa Aesar,2,198,199.5,1.5
+4806,4-bromobiphenyl,c1ccc(cc1)c2ccc(cc2)Br,90,6834,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12638,Alfa Aesar,2,90,91.5,1.5
+574,"1,3-dihydroxynaphthalene",c1ccc2c(c1)cc(cc2O)O,125,8282,http://www.alfa.com/en/GP100W.pgm?DSSTK=A17739,Alfa Aesar,2,123.5,125,1.5
+6794,dibenzyl disulfide,c1ccc(cc1)CSSCc2ccccc2,70,8662,http://www.alfa.com/en/GP100W.pgm?DSSTK=L11850,Alfa Aesar,2,70,71.5,1.5
+14957,"1,3-Thiazolidine-4-carboxylic acid",O=C(O)C1CSCN1,195,9546,http://msds.chem.ox.ac.uk/,academic website,2,195,196.5,1.5
+3031,2-phenylhydroquinone,c1ccc(cc1)c2cc(ccc2O)O,101,13493,http://www.alfa.com/en/GP100W.pgm?DSSTK=B20708,Alfa Aesar,2,101,102.5,1.5
+2218,2-bromofluorene,c1ccc-2c(c1)Cc3c2ccc(c3)Br,112,13697,http://www.alfa.com/en/GP100W.pgm?DSSTK=L07589,Alfa Aesar,2,112,113.5,1.5
+5083,4-ethylresorcinol,CCc1ccc(cc1O)O,97,16931,http://www.alfa.com/en/GP100W.pgm?DSSTK=B21575,Alfa Aesar,2,97,98.5,1.5
+3355,"3,4-dimethylbenzophenone",Cc1ccc(cc1C)C(=O)c2ccccc2,46,68247,http://www.alfa.com/en/GP100W.pgm?DSSTK=B20965,Alfa Aesar,2,46,47.5,1.5
+15033,1H-Benzotriazol-1-ol,On2nnc1ccccc12,159,68282,http://msds.chem.ox.ac.uk/,academic website,2,157.5,159,1.5
+12755,4-(4-methoxyphenyl)butanoic acid,O=C(O)CCCc1ccc(OC)cc1,59,70652,http://dx.doi.org/10.1021/ci0500132,Karthikeyan M.; Glen R.C.; Bender A. General melting point prediction based on a diverse compound dataset and artificial neural networks. J. Chem. Inf. Model.; 2005; 45(3); 581-4337,2,57.5,59,1.5
+12334,"2,3-Diphenylacrylic acid",O=C(O)C(=Cc1ccccc1)c1ccccc1,171,610579,http://dx.doi.org/10.1021/ci0500132,Karthikeyan M.; Glen R.C.; Bender A. General melting point prediction based on a diverse compound dataset and artificial neural networks. J. Chem. Inf. Model.; 2005; 45(3); 581-3916,2,171,172.5,1.5
+5668,"5,7-dihydroxyflavone",c1ccc(cc1)c2cc(=O)c3c(cc(cc3o2)O)O,287,4444926,http://www.alfa.com/en/GP100W.pgm?DSSTK=L14178,Alfa Aesar,2,285.5,287,1.5
+3575,3-acetylpyridine,CC(=O)c1cccnc1,12,13856009,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14246,Alfa Aesar,2,12,13.5,1.5
+7852,"N,N-dimethyl-3-nitroaniline",CN(C)c1cccc(c1)[N+](=O)[O-],59,21168823,http://www.alfa.com/en/GP100W.pgm?DSSTK=L00401,Alfa Aesar,2,59,60.5,1.5
+5663,"5,6-dimethylbenzimidazole",Cc1cc2c(cc1C)nc[nH]2,204,655,http://www.alfa.com/en/GP100W.pgm?DSSTK=L07469,Alfa Aesar,3,204,205.5,1.5
+8746,acemetacin,COc3ccc2n(C(=O)c1ccc(Cl)cc1)c(C)c(CC(=O)OCC(O)=O)c2c3,150,1904,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1192,3,150,151.5,1.5
+16787,Ethacrynic acid,Clc1c(ccc(OCC(=O)O)c1Cl)C(=O)C(=C)CC,122.5,3163,http://www.drugbank.ca/drugs/DB00903,DrugBank,3,121,122.5,1.5
+15024,"1-Ethyl-1H-pyrrole-2,5-dione",O=C1C=CC(=O)N1CC,44,4209,http://msds.chem.ox.ac.uk/,academic website,3,44,45.5,1.5
+13589,1-ethynyl-1-cyclohexanol,C#CC1(O)CCCCC1,33,6277,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,31.5,33,1.5
+14262,4-tert-butylbenzoic_acid,CC(C)(C)c1ccc(cc1)C(=O)O,165,7125,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,164.5,166,1.5
+15418,"4,5,6,7-Tetrachloro-2-benzofuran-1,3-dione",O=C1OC(=O)c2c1c(Cl)c(Cl)c(Cl)c2Cl,255.5,8023,http://msds.chem.ox.ac.uk/,academic website,3,254.5,256,1.5
+14394,"2,6-dichlorobenzamide",O=C(N)c1c(Cl)cccc1Cl,198,15359,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,197.5,199,1.5
+13687,4-cyanobenzaldehyde,O=Cc1ccc(C#N)cc1,102,59433,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,100.5,102,1.5
+13759,2-hydroxyacetophenone,O=C(CO)c1ccccc1,6,61765,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,4.5,6,1.5
+14239,4-cyclohexylaniline,Nc1ccc(cc1)C2CCCCC2,53,72918,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,53,54.5,1.5
+14801,"(2R,3S)-Butane-2,3-diol",C[C@@H](O)[C@H](C)O,33,190756,http://msds.chem.ox.ac.uk/,academic website,3,33,34.5,1.5
+15906,Methyl acrylate,C=CC(=O)OC,-75,7022,http://msds.chem.ox.ac.uk/,academic website,4,-76.5,-75,1.5
+15845,Hexan-2-one,CC(=O)CCCC,-57,11095,http://msds.chem.ox.ac.uk/,academic website,4,-57,-55.5,1.5
+15487,4-Methylbenzonitrile,N#Cc1ccc(C)cc1,29,21106167,http://msds.chem.ox.ac.uk/,academic website,4,28,29.5,1.5
+27994,DCC,N(=C=N\C1CCCCC1)\C2CCCCC2,34.5,10408,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10973&rnd=155635834,Alfa Aesar,7,34.5,36,1.5
+13738,isophthalaldehyde,O=Cc1cccc(C=O)c1,89,32002,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,4,87.85,89.5,1.65
+15319,2-Nitropropane,CC(C)[N+]([O-])=O,-93,387,http://msds.chem.ox.ac.uk/,academic website,3,-93,-91.3,1.7
+14961,"1,4-Benzoquinone",O=C1C=CC(=O)C=C1,114,4489,http://msds.chem.ox.ac.uk/,academic website,4,114,115.7,1.7
+18101,"cyclopentane, 1,2,4-trimethyl-, (1.alpha.,2.alph",CC1CC(C)C(C)C1,-132.6,16800,http://www.srcinc.com/what-we-do/product.aspx?id=133,PHYSPROP,3,-132.6,-130.8,1.8
+15878,Lauric acid,O=C(O)CCCCCCCCCCC,45,3756,http://msds.chem.ox.ac.uk/,academic website,4,43.2,45,1.8
+3138,3-(4-hydroxyphenyl)propionic acid,c1cc(ccc1CCC(=O)O)O,129,9965,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14567,Alfa Aesar,3,129,130.8,1.8
+14726,"2,4,6-triiodophenol",Ic1cc(I)c(O)c(I)c1,158,11369,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,158,159.8,1.8
+15987,N-Cyclohexylcyclohexanamine,C1CCCCC1NC2CCCCC2,-1,7301,http://msds.chem.ox.ac.uk/,academic website,4,-2,-0.1,1.9
+2355,2-chloro-4-nitrobenzamide,c1cc(c(cc1[N+](=O)[O-])Cl)C(=O)N,170,1991,http://www.alfa.com/en/GP100W.pgm?DSSTK=A19702,Alfa Aesar,2,170,172,2
+2063,2-benzoxazolinone,c1ccc2c(c1)[nH]c(=O)o2,140,5820,http://www.alfa.com/en/GP100W.pgm?DSSTK=A19378,Alfa Aesar,2,138,140,2
+15227,2-Aminoethanethiol,NCCS,96,5834,http://msds.chem.ox.ac.uk/,academic website,2,96,98,2
+157,1-indanone,c1ccc2c(c1)CCC2=O,40,6479,http://www.alfa.com/en/GP100W.pgm?DSSTK=A11056,Alfa Aesar,2,40,42,2
+1505,"2',4'-dihydroxyacetophenone",CC(=O)c1ccc(cc1O)O,144,6724,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12066,Alfa Aesar,2,144,146,2
+15022,1-Ethoxy-4-nitrobenzene,CCOc1ccc(cc1)[N+]([O-])=O,58,7214,http://msds.chem.ox.ac.uk/,academic website,2,58,60,2
+2525,2-cyanopyridine,c1ccnc(c1)C#N,27,7241,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12900,Alfa Aesar,2,27,29,2
+3226,"3,3'-thiodipropionic acid",C(CSCCC(=O)O)C(=O)O,131,7805,http://www.alfa.com/en/GP100W.pgm?DSSTK=A17220,Alfa Aesar,2,129,131,2
+2446,2-chloroanthraquinone,c1ccc2c(c1)C(=O)c3ccc(cc3C2=O)Cl,209,8235,http://www.alfa.com/en/GP100W.pgm?DSSTK=B22938,Alfa Aesar,2,209,211,2
+5142,4'-fluoroacetanilide,CC(=O)Nc1ccc(cc1)F,152,9225,http://www.alfa.com/en/GP100W.pgm?DSSTK=A18974,Alfa Aesar,2,152,154,2
+1196,"2',3',4'-trihydroxyacetophenone",CC(=O)c1ccc(c(c1O)O)O,171,10256,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14364,Alfa Aesar,2,171,173,2
+6539,bis(2-methoxyphenyl) carbonate,COc1ccccc1OC(=O)Oc2ccccc2OC,87,10633,http://www.alfa.com/en/GP100W.pgm?DSSTK=L12825,Alfa Aesar,2,87,89,2
+6779,diallyl sulfide,C=CCSCC=C,-83,11128,http://www.alfa.com/en/GP100W.pgm?DSSTK=L10971,Alfa Aesar,2,-85,-83,2
+2504,2-chloroquinoline,c1ccc2c(c1)ccc(n2)Cl,36,11434,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23443,Alfa Aesar,2,36,38,2
+14341,"3,5-dinitroaniline",O=[N+]([O-])c1cc(cc(N)c1)[N+]([O-])=O,161,11571,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,2,161,163,2
+4018,3-hydroxyphenylacetic acid,c1cc(cc(c1)O)CC(=O)O,130,11624,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23563,Alfa Aesar,2,130,132,2
+2902,2-methyl-8-nitroquinoline,Cc1ccc2cccc(c2n1)[N+](=O)[O-],138,12858,http://www.alfa.com/en/GP100W.pgm?DSSTK=L03006,Alfa Aesar,2,138,140,2
+3292,"3,4-dichlorobenzyl alcohol",c1cc(c(cc1CO)Cl)Cl,38,14956,http://www.alfa.com/en/GP100W.pgm?DSSTK=A13236,Alfa Aesar,2,36,38,2
+174,1-hexadecanethiol,CCCCCCCCCCCCCCCCS,21,17019,http://www.alfa.com/en/GP100W.pgm?DSSTK=L15099,Alfa Aesar,2,19,21,2
+5019,4'-cyanoacetanilide,CC(=O)Nc1ccc(cc1)C#N,205,34195,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14941,Alfa Aesar,2,205,207,2
+1861,2-acetyl-1-naphthol,CC(=O)c1ccc2ccccc2c1O,99,62933,http://www.alfa.com/en/GP100W.pgm?DSSTK=A19532,Alfa Aesar,2,99,101,2
+6560,bis(diphenylphosphino)methane,c1ccc(cc1)P(CP(c2ccccc2)c3ccccc3)c4ccccc4,119,67509,http://www.alfa.com/en/GP100W.pgm?DSSTK=B21112,Alfa Aesar,2,119,121,2
+3605,3-amino-4-chlorobenzoic acid,c1cc(c(cc1C(=O)O)N)Cl,216,68579,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12671,Alfa Aesar,2,214,216,2
+7485,methyl 2-amino-5-chlorobenzoate,COC(=O)c1cc(ccc1N)Cl,69,71213,http://www.alfa.com/en/GP100W.pgm?DSSTK=L20187,Alfa Aesar,2,67,69,2
+6296,9-fluorenylmethanol,c1ccc2c(c1)-c3ccccc3C2CO,104,81679,http://www.alfa.com/en/GP100W.pgm?DSSTK=A15212,Alfa Aesar,2,104,106,2
+2370,2-chloro-5-(trifluoromethyl)pyridine,c1cc(ncc1C(F)(F)F)Cl,31,83365,http://www.alfa.com/en/GP100W.pgm?DSSTK=L08207,Alfa Aesar,2,31,33,2
+1650,"2,5-dimethyl-1,3,4-thiadiazole",Cc1nnc(s1)C,63,87514,http://www.alfa.com/en/GP100W.pgm?DSSTK=A17227,Alfa Aesar,2,63,65,2
+5111,4-fluoro-2-nitrophenol,c1cc(c(cc1F)[N+](=O)[O-])O,75,120011,http://www.alfa.com/en/GP100W.pgm?DSSTK=A15847,Alfa Aesar,2,73,75,2
+15136,"2,2'-Thiene-2,5-diylbis(5-tert-butyl-1,3-benzoxazole)",CC(C)(C)c1cc2nc(oc2cc1)c3ccc(s3)c4oc5ccc(cc5n4)C(C)(C)C,199,258050,http://msds.chem.ox.ac.uk/,academic website,2,199,201,2
+2685,2-hexynoic acid,CCCC#CC(=O)O,25,287294,http://www.alfa.com/en/GP100W.pgm?DSSTK=L02526,Alfa Aesar,2,25,27,2
+1378,"2,4,6-trifluorobenzoic acid",c1c(cc(c(c1F)C(=O)O)F)F,141,453910,http://www.alfa.com/en/GP100W.pgm?DSSTK=A19758,Alfa Aesar,2,141,143,2
+6677,coniferyl alcohol,COc1cc(ccc1O)/C=C/CO,76,1266063,http://www.alfa.com/en/GP100W.pgm?DSSTK=B24949,Alfa Aesar,2,74,76,2
+15775,D-Ribose,O[C@@H](C=O)[C@H](O)[C@H](O)CO,82,4470639,http://msds.chem.ox.ac.uk/,academic website,2,82,84,2
+9237,N-p-Tolyl-benzamide,O=C(Nc1ccc(C)cc1)c1ccccc1,156,10274392,http://dx.doi.org/10.1021/ci0500132,Karthikeyan M.; Glen R.C.; Bender A. General melting point prediction based on a diverse compound dataset and artificial neural networks. J. Chem. Inf. Model.; 2005; 45(3); 581-819,2,156,158,2
+14489,m-bromonitrobenzene,O=[N+]([O-])c1cc(Br)ccc1,54,21111786,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,2,54,56,2
+4883,4-chloro-2-nitrophenol,c1cc(c(cc1Cl)[N+](=O)[O-])O,87,6714,http://www.alfa.com/en/GP100W.pgm?DSSTK=A18150,Alfa Aesar,3,87,89,2
+13573,"2,4-diaminotoluene",Nc1cc(N)c(C)cc1,97,6991,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,97,99,2
+15178,"2,4-Di-tert-butylphenol",CC(C)(C)c1cc(ccc1O)C(C)(C)C,54.5,7037,http://msds.chem.ox.ac.uk/,academic website,3,54.5,56.5,2
+15484,"4-Methylbenzene-1,2-dithiol",Cc1cc(S)c(S)cc1,31,9910,http://msds.chem.ox.ac.uk/,academic website,3,29,31,2
+14070,"3,5-dichloroaniline",Nc1cc(Cl)cc(Cl)c1,53,11778,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,51,53,2
+15589,Anthracene-9-carbonitrile,N#Cc2c3ccccc3cc1ccccc12,175,13924,http://msds.chem.ox.ac.uk/,academic website,3,175,177,2
+14363,cyclododecanol,OC1CCCCCCCCCCC1,76,14836,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,76,78,2
+2951,2-naphthyl benzoate,c1ccc(cc1)C(=O)Oc2ccc3ccccc3c2,107,60100,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12935,Alfa Aesar,3,105,107,2
+14511,pentaerythrityl_tetrachloride,ClCC(CCl)(CCl)CCl,95,69160,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,95,97,2
+1242,"2,3-dibromobutyric acid",CC(C(C(=O)O)Br)Br,86,86082,http://www.alfa.com/en/GP100W.pgm?DSSTK=L04841,Alfa Aesar,3,85,87,2
+14495,diethyl_adipate,O=C(CCCCC(=O)OCC)OCC,-18,13835108,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,-20,-18,2
+15566,Acetamide,CC(N)=O,81,173,http://msds.chem.ox.ac.uk/,academic website,4,79,81,2
+14861,1-(Chloromethyl)-4-nitrobenzene,O=[N+]([O-])c1ccc(CCl)cc1,71,7202,http://msds.chem.ox.ac.uk/,academic website,4,71,73,2
+13740,terephthaldicarboxaldehyde,O=Cc1ccc(C=O)cc1,116,11673,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,4,115,117,2
+869,(S)-2-(6-methoxy-2-naphthyl)propionic acid,C[C@@H](c1ccc2cc(ccc2c1)OC)C(=O)O,155,137720,http://www.alfa.com/en/GP100W.pgm?DSSTK=L09855,Alfa Aesar,4,153,155,2
+15054,1-Methoxy-4-[(1E)-prop-1-en-1-yl]benzene,COc1ccc(/C=C/C)cc1,21,553166,http://msds.chem.ox.ac.uk/,academic website,4,21,23,2
+15716,Diethyl (2E)-but-2-enedioate,O=C(/C=C/C(=O)OCC)OCC,1,553702,http://msds.chem.ox.ac.uk/,academic website,4,0,2,2
+15325,2-Phenoxyethanol,OCCOc1ccccc1,12,13848467,http://msds.chem.ox.ac.uk/,academic website,4,12,14,2
+15477,4-Methoxyaniline,Nc1ccc(OC)cc1,57,13869414,http://msds.chem.ox.ac.uk/,academic website,4,57,59,2
+15181,"2,5-Dichloroaniline",Clc1ccc(Cl)c(N)c1,48,13869655,http://msds.chem.ox.ac.uk/,academic website,4,48,50,2
+14838,(E)-Diphenyldiazene,N(=N/c1ccccc1)c2ccccc2,68.5,2185,http://msds.chem.ox.ac.uk/,academic website,5,67,69,2
+8881,pindolol,CC(C)NCC(O)COc1cccc2[nH]ccc12,170,4662,http://dx.doi.org/10.1021/ci020280x,Bergstrom C. A. S.; Norinder U.; Luthman K.; Artursson P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1327,5,169,171,2
+28554,Sulfapyridine,C1=CC=NC(=C1)NS(=O)(=O)C2=CC=C(C=C2)N,190,5145,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),5,190,192,2
+738,"1,1-diphenylethylene",C=C(c1ccccc1)c2ccccc2,6,10287,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14434,Alfa Aesar,3,6,8.2,2.2
+13510,trans-1-phenyl-1-propene,CC=Cc1ccccc1,-29,221082,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,3,-29.3,-27.1,2.2
+16059,Pentafluorophenol,Fc1c(F)c(F)c(F)c(O)c1F,35,12499,http://msds.chem.ox.ac.uk/,academic website,3,32.8,35,2.2
+3253,"3,4,5-trimethoxybenzoic acid",COc1cc(cc(c1OC)OC)C(=O)O,170,8054,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14274,Alfa Aesar,3,170,172.3,2.3
+4662,4-benzylpyridine,c1ccc(cc1)Cc2ccncc2,10,15603,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14326,Alfa Aesar,2,10,12.4,2.4
+15542,7-Methylquinoline,Cc1cc2ncccc2cc1,36.5,11433,http://msds.chem.ox.ac.uk/,academic website,2,36.5,39,2.5
+15761,Docosan-1-ol,CCCCCCCCCCCCCCCCCCCCCCO,70,12100,http://msds.chem.ox.ac.uk/,academic website,2,70,72.5,2.5
+14042,3-chloro-p-anisidine,COc1ccc(N)cc1Cl,50,20151,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,2,50,52.5,2.5
+8476,tetrachlorothiophene,c1(c(c(sc1Cl)Cl)Cl)Cl,28,20971,http://www.alfa.com/en/GP100W.pgm?DSSTK=L03127,Alfa Aesar,2,28,30.5,2.5
+5335,4-methoxybenzoic anhydride,COc1ccc(cc1)C(=O)OC(=O)c2ccc(cc2)OC,97,63122,http://www.alfa.com/en/GP100W.pgm?DSSTK=L06180,Alfa Aesar,2,94.5,97,2.5
+3101,"3-(2-methoxyphenoxy)-1,2-propanediol",COc1ccccc1OCC(CO)O,81,3396,http://www.alfa.com/en/GP100W.pgm?DSSTK=A16827,Alfa Aesar,3,78.5,81,2.5
+13568,4-methylbenzyl_alcohol,Cc1ccc(CO)cc1,61,11021,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,59,61.5,2.5
+15199,"2,6-Dimethyl-1,4-benzoquinone",O=C1C=C(C)C(=O)C(C)=C1,70,61542,http://msds.chem.ox.ac.uk/,academic website,3,70,72.5,2.5
+13521,3-cyanophenol,N#Cc1cc(O)ccc1,82,12821,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,4,79.5,82,2.5
+27682,4-Hydroxybenzoic acid,C1=CC(=CC=C1C(=O)O)O,216,132,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),5,214.5,217,2.5
+1503,"2',4-dihydroxy-3-methoxychalcone",COc1cc(ccc1O)/C=C/C(=O)c2ccccc2O,128,4767768,http://www.alfa.com/en/GP100W.pgm?DSSTK=H27537,Alfa Aesar,5,126.5,129,2.5
+27453,"1,2,4-Tribromobenzene",C1=CC(=C(C=C1Br)Br)Br,44,11507,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),6,42,44.5,2.5
+15451,4-Chlorobenzaldehyde,O=Cc1ccc(Cl)cc1,46,21106019,http://msds.chem.ox.ac.uk/,academic website,6,46,48.5,2.5
+15037,"1H-Indole-2,3-dione",O=C1c2ccccc2NC1=O,200,6787,http://msds.chem.ox.ac.uk/,academic website,2,200,203,3
+14092,benzoylacetone,O=C(CC(C)=O)c1ccccc1,59,6898,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,2,56,59,3
+5914,5-fluoro-2-nitrophenol,c1cc(c(cc1F)O)[N+](=O)[O-],33,9549,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12568,Alfa Aesar,2,33,36,3
+1713,"2,6-dibromoquinone-4-chloroimide",C1=C(C(=O)C(=CC1=NCl)Br)Br,80,10378,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12207,Alfa Aesar,2,80,83,3
+6315,acetic hydrazide,CC(=O)NN,64,13420,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10969,Alfa Aesar,2,64,67,3
+1213,"2,3,5,6-tetrafluorophenylhydrazine",c1c(c(c(c(c1F)F)NN)F)F,89,62756,http://www.alfa.com/en/GP100W.pgm?DSSTK=B22600,Alfa Aesar,2,89,92,3
+1716,"2,6-dichloro-3-cyano-4-methylpyridine",Cc1cc(nc(c1C#N)Cl)Cl,110,63319,http://www.alfa.com/en/GP100W.pgm?DSSTK=B20346,Alfa Aesar,2,110,113,3
+5021,4-cyanobenzamide,c1cc(ccc1C#N)C(=O)N,227,68899,http://www.alfa.com/en/GP100W.pgm?DSSTK=B25600,Alfa Aesar,2,224,227,3
+14655,"2,5-dibromoaniline",Brc1ccc(Br)c(N)c1,51,69628,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,2,51,54,3
+8380,quinoline-2-carboxaldehyde,c1ccc2c(c1)ccc(n2)C=O,68,71926,http://www.alfa.com/en/GP100W.pgm?DSSTK=L20202,Alfa Aesar,2,68,71,3
+7079,ethyl 3-amino-1h-pyrazole-4-carboxylate,CCOC(=O)c1c[nH]nc1N,106,73512,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10882,Alfa Aesar,2,103,106,3
+8650,trimethylacetylacetonitrile,CC(C)(C)C(=O)CC#N,68,97904,http://www.alfa.com/en/GP100W.pgm?DSSTK=A16309,Alfa Aesar,2,68,71,3
+2796,"2-mercapto-5-methyl-1,3,4-thiadiazole",Cc1nnc(s1)S,184,1414905,http://www.alfa.com/en/GP100W.pgm?DSSTK=B21355,Alfa Aesar,2,184,187,3
+15819,Glycol acid,O=C(O)CO,80,737,http://msds.chem.ox.ac.uk/,academic website,3,77,80,3
+16117,Stearic acid,O=C(O)CCCCCCCCCCCCCCCCC,68,5091,http://msds.chem.ox.ac.uk/,academic website,3,68,71,3
+15865,Iodoform,IC(I)I,121.5,6134,http://msds.chem.ox.ac.uk/,academic website,3,119,122,3
+14200,4-chloro-2-nitrotoluene,Cc1ccc(Cl)cc1[N+]([O-])=O,39,6709,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,36,39,3
+14306,p-bromobenzonitrile,N#Cc1ccc(Br)cc1,111,11662,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,111,114,3
+14776,(2-Amino-5-chlorophenyl)(phenyl)methanone,Nc2ccc(Cl)cc2C(=O)c1ccccc1,96,12339,http://msds.chem.ox.ac.uk/,academic website,3,96,99,3
+4149,3-nitrobiphenyl,c1ccc(cc1)c2cccc(c2)[N+](=O)[O-],59,15596,http://www.alfa.com/en/GP100W.pgm?DSSTK=L01246,Alfa Aesar,3,59,62,3
+13855,2-chlorobenzyl alcohol,OCc1ccccc1Cl,70,26799,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,70,73,3
+15343,"3,3-Bis(4-hydroxy-5-isopropyl-2-methylphenyl)-2-benzofuran-1(3H)-one",CC(C)c1cc(c(C)cc1O)C3(OC(=O)c2ccccc23)c4cc(C(C)C)c(O)cc4C,250,29054,http://msds.chem.ox.ac.uk/,academic website,3,250,253,3
+15463,"4-Hexylbenzene-1,3-diol",Oc1cc(O)ccc1CCCCCC,65,21106121,http://msds.chem.ox.ac.uk/,academic website,3,65,68,3
+15866,Iodomethane,CI,-64,6088,http://msds.chem.ox.ac.uk/,academic website,4,-67,-64,3
+16799,Butethal,O=C1NC(=O)NC(=O)C1(CCCC)CC,128.5,6229,http://www.drugbank.ca/drugs/DB01353,DrugBank,4,125.5,128.5,3
+15753,Diphenylmethanol,OC(c1ccccc1)c2ccccc2,66,6770,http://msds.chem.ox.ac.uk/,academic website,4,66,69,3
+15733,Dimethyl carbonate,O=C(OC)OC,1,11526,http://msds.chem.ox.ac.uk/,academic website,4,1,4,3
+14953,"1,3-Diphenylacetone",O=C(Cc1ccccc1)Cc2ccccc2,32,21105887,http://msds.chem.ox.ac.uk/,academic website,4,32,35,3
+14857,1-(3-Nitrophenyl)ethanone,O=[N+]([O-])c1cc(ccc1)C(C)=O,81,21106145,http://msds.chem.ox.ac.uk/,academic website,4,78,81,3
+27566,"2,4-Dichlorophenol",C1=CC(=C(C=C1Cl)Cl)O,42.5,8140,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),6,42,45,3
+13770,phenylacetic_acid,OC(=O)Cc1ccccc1,79,10181341,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,7,76,79,3
+16050,Pent-1-ene,CCCC=C,-165,7713,http://msds.chem.ox.ac.uk/,academic website,4,-165.2,-162.12,3.08
+16039,Octadecan-1-amine,CCCCCCCCCCCCCCCCCCN,56,15016,http://msds.chem.ox.ac.uk/,academic website,3,52.9,56,3.1
+8310,propionamide,CCC(=O)N,78,6330,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10521,Alfa Aesar,2,78,81.3,3.3
+15308,2-Methylpyridine,Cc1ccccn1,-70,13839199,http://msds.chem.ox.ac.uk/,academic website,3,-70,-66.7,3.3
+147,1-iodododecane,CCCCCCCCCCCCI,-3,19108,http://www.alfa.com/en/GP100W.pgm?DSSTK=A11909,Alfa Aesar,3,-3,0.3,3.3
+27661,4-Bromoaniline,C1=CC(=CC=C1N)Br,66,7519,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),5,63,66.4,3.4
+15735,Dimethyl ether,COC,-138,7956,http://msds.chem.ox.ac.uk/,academic website,2,-141.5,-138,3.5
+8275,phenylphosphonic acid,c1ccc(cc1)P(=O)(O)O,161,14560,http://www.alfa.com/en/GP100W.pgm?DSSTK=B22939,Alfa Aesar,2,161,164.5,3.5
+14967,"1,4-Diisocyanatobenzene",O=C=Nc1ccc(cc1)N=C=O,94,54970,http://msds.chem.ox.ac.uk/,academic website,2,94,97.5,3.5
+8117,N-octyl gallate,CCCCCCCCOC(=O)c1cc(c(c(c1)O)O)O,99,55194,http://www.alfa.com/en/GP100W.pgm?DSSTK=L06081,Alfa Aesar,2,99,102.5,3.5
+5058,4-ethoxy-3-methoxybenzaldehyde,CCOc1ccc(cc1OC)C=O,61,60464,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10897,Alfa Aesar,2,61,64.5,3.5
+4592,4'-aminoacetanilide,CC(=O)Nc1ccc(cc1)N,163,10297844,http://www.alfa.com/en/GP100W.pgm?DSSTK=B20740,Alfa Aesar,2,163,166.5,3.5
+1168,"2,3,4,5,6-pentafluorobenzyl alcohol",C(c1c(c(c(c(c1F)F)F)F)F)O,34,9535,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12119,Alfa Aesar,3,34,37.5,3.5
+15924,Methylphosphonic acid,CP(=O)(O)O,106,13220,http://msds.chem.ox.ac.uk/,academic website,3,105,108.5,3.5
+13366,5-amino-1-pentanol,NCCCCCO,35,68156,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,35,38.5,3.5
+27396,(2S)-1-amino-2-propanol,C[C@@H](CN)O,25,5641722,http://www.alfa.com/en/GP100W.pgm?DSSTK=L14102,Alfa Aesar,3,21.5,25,3.5
+28524,salicylideneaniline,Oc1ccccc1C=Nc2ccccc2,51,10237273,http://www.sciencedirect.com/science/article/pii/0022286087850391,Journal of Molecular Structure,3,47.5,51,3.5
+15175,"2,4-Dinitroaniline",O=[N+]([O-])c1cc(ccc1N)[N+]([O-])=O,176.5,7045,http://msds.chem.ox.ac.uk/,academic website,4,176.5,180,3.5
+15182,"2,5-Dichlorobenzoic acid",OC(=O)c1cc(Cl)ccc1Cl,152.5,10801689,http://msds.chem.ox.ac.uk/,academic website,4,152.5,156,3.5
+15265,2-Hydroxy-3-methoxybenzaldehyde,Oc1c(cccc1OC)C=O,41,21105848,http://msds.chem.ox.ac.uk/,academic website,4,41,44.5,3.5
+27569,"2,4,5-trichlorophenol",Clc1cc(O)c(Cl)cc1Cl,69,7001,http://www.amazon.com/gp/product/0849304865/,CRC Handbook of Chemistry and Physics,5,65.5,69,3.5
+1323,"2,3-dimethylphenol",Cc1cccc(c1C)O,72,13839151,http://www.alfa.com/en/GP100W.pgm?DSSTK=B22860,Alfa Aesar,5,71.5,75,3.5
+27449,"1,2,3,5-Tetrachlorobenzene",C1=C(C=C(C(=C1Cl)Cl)Cl)Cl,51.5,21106571,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),5,51.5,55,3.5
+28257,Methyl 4-aminobenzoate,COC(=O)C1=CC=C(C=C1)N,114,11585,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),6,110.5,114,3.5
+28422,Phenacetin,CCOC1=CC=C(C=C1)NC(=O)C,135,4590,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),10,134,137.5,3.5
+4236,4-(2-hydroxyethyl)morpholine,C1COCCN1CCO,2,55110,http://www.alfa.com/en/GP100W.pgm?DSSTK=B22759,Alfa Aesar,2,-1.6,2,3.6
+15377,3-Fluorophenol,Fc1cccc(O)c1,10,9360,http://msds.chem.ox.ac.uk/,academic website,3,10,13.7,3.7
+7397,isovaleric acid,CC(C)CC(=O)O,-33,10001,http://www.alfa.com/en/GP100W.pgm?DSSTK=A18642,Alfa Aesar,4,-33,-29.3,3.7
+13944,methyl_4-methylbenzoate,COC(=O)c1ccc(C)cc1,37,7175,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,33.2,37,3.8
+15585,Anthracen-2-amine,Nc1ccc2cc3ccccc3cc2c1,235,11443,http://msds.chem.ox.ac.uk/,academic website,3,235,238.8,3.8
+8287,phthalimide,c1ccc2c(c1)C(=O)NC2=O,234,6550,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12584,Alfa Aesar,2,234,238,4
+14226,2-chloro-4-nitrophenol,Oc1ccc(cc1Cl)[N+]([O-])=O,106,11577,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,2,106,110,4
+15979,N-Acetyl-L-tyrosine,Oc1ccc(C[C@H](NC(C)=O)C(=O)O)cc1,149,61606,http://msds.chem.ox.ac.uk/,academic website,2,149,153,4
+3997,3-hydroxy-4-nitrobenzoic acid,c1cc(c(cc1C(=O)O)O)[N+](=O)[O-],234,62477,http://www.alfa.com/en/GP100W.pgm?DSSTK=A10724,Alfa Aesar,2,230,234,4
+321,"1-bromo-2,3,5,6-tetramethylbenzene",Cc1cc(c(c(c1C)Br)C)C,60,66847,http://www.alfa.com/en/GP100W.pgm?DSSTK=L01465,Alfa Aesar,2,56,60,4
+2841,2-methoxybenzophenone,COc1ccccc1C(=O)c2ccccc2,37,68220,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23376,Alfa Aesar,2,37,41,4
+5238,4-hydroxydiphenylamine,c1ccc(cc1)Nc2ccc(cc2)O,69,21111849,http://www.alfa.com/en/GP100W.pgm?DSSTK=L18945,Alfa Aesar,2,69,73,4
+13961,"5-nitro-1,3-dimethylbenzene",Cc1cc(C)cc(c1)[N+](=O)[O-],74,7148,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,71,75,4
+13923,p-nitrobenzonitrile,O=[N+]([O-])c1ccc(C#N)cc1,149,11593,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,145,149,4
+13494,m-tolunitrile,N#Cc1cccc(C)c1,-23,11607,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,-27,-23,4
+6525,"biphenyl-4,4'-dicarbonitrile",c1cc(ccc1C#N)c2ccc(cc2)C#N,234,14584,http://www.alfa.com/en/GP100W.pgm?DSSTK=L03450,Alfa Aesar,3,234,238,4
+13515,2-aminobenzonitrile,N#Cc1ccccc1N,48,65745,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,47,51,4
+5346,4-methoxychalcone,COc1ccc(cc1)/C=C/C(=O)c2ccccc2,75,557051,http://www.alfa.com/en/GP100W.pgm?DSSTK=L03319,Alfa Aesar,3,75,79,4
+8294,"piperazine, anhydrous",C1CNCCN1,110,13835459,http://www.alfa.com/en/GP100W.pgm?DSSTK=A15049,Alfa Aesar,3,106,110,4
+15043,1-Iodo-2-nitrobenzene,Ic1ccccc1[N+](=O)[O-],50,62332,http://msds.chem.ox.ac.uk/,academic website,4,50,54,4
+14968,"1,4-Dimethoxybenzene",COc1ccc(OC)cc1,58,21105878,http://msds.chem.ox.ac.uk/,academic website,4,56,60,4
+27902,Carbazole,C1=CC=C2C(=C1)C3=CC=CC=C3N2,247,6593,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),5,243,247,4
+28019,Dibenz[ah]anthracene,C1=CC=C2C(=C1)C=CC3=CC4=C(C=CC5=CC=CC=C54)C=C32,269,5678,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),6,266,270,4
+28141,Furosemide,C1=COC(=C1)CNC2=CC(=C(C=C2C(=O)O)S(=O)(=O)N)Cl,206,3322,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),7,204,208,4
+27628,"3,4-Dichloronitrobenzene",C1=CC(=C(C=C1[N+](=O)[O-])Cl)Cl,41.3,21106095,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),7,39,43,4
+27861,Bibenzyl,C1=CC=C(C=C1)CCC2=CC=CC=C2,52,7364,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),8,51,55,4
+28437,Phenothazine,C1=CC=C2C(=C1)NC3=CC=CC=C3S2,187,21106365,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),8,183.5,187.5,4
+28259,Methyl 4-hydroxybenzoate,COC(=O)C1=CC=C(C=C1)O,131,7176,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),9,127,131,4
+14661,1-octadecyne,CCCCCCCCCCCCCCCCC#C,27,62633,http://www.amazon.com/dp/B002IYRJWI,American Petroleum Institute. Research Project 44; Selected Values of Properties of Hydrocarbons and Related Compounds. Texas A & M University; College Station; TX; 1973.,2,22.5,27,4.5
+2221,2-bromoisobutyric acid,CC(C)(C(=O)O)Br,44,10790335,http://www.alfa.com/en/GP100W.pgm?DSSTK=A15854,Alfa Aesar,2,44,48.5,4.5
+4443,"4,4'-methylenebis(n,n-dimethylaniline)",CN(C)c1ccc(cc1)Cc2ccc(cc2)N(C)C,87,21106506,http://www.alfa.com/en/GP100W.pgm?DSSTK=A18466,Alfa Aesar,2,87,91.5,4.5
+6400,azelaic acid,C(CCCC(=O)O)CCCC(=O)O,102,2179,http://www.alfa.com/en/GP100W.pgm?DSSTK=42587,Alfa Aesar,3,102,106.5,4.5
+20565,"piperazine, 2,5-dimethyl-, cis-",CC1CNC(C)CN1,114,7528,http://www.srcinc.com/what-we-do/product.aspx?id=133,PHYSPROP,3,114,118.5,4.5
+2474,2-chloroethylphosphonic acid,C(CCl)P(=O)(O)O,70,26031,http://www.alfa.com/en/GP100W.pgm?DSSTK=L04884,Alfa Aesar,3,70,74.5,4.5
+15555,9H-Xanthen-9-ol,OC1c3ccccc3Oc2ccccc12,123,65693,http://msds.chem.ox.ac.uk/,academic website,3,123,127.5,4.5
+15222,2-Amino-2-methylpropan-1-ol,CC(C)(N)CO,30,13835861,http://msds.chem.ox.ac.uk/,academic website,3,25.5,30,4.5
+13420,hydroquinone,Oc1ccc(O)cc1,175,764,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,4,170.5,175,4.5
+2469,2-chloroethanol,C(CCl)O,-63,21106015,http://www.alfa.com/en/GP100W.pgm?DSSTK=36636,Alfa Aesar,4,-67.5,-63,4.5
+28547,Sulfamethoxazole,CC1=CC(=NO1)NS(=O)(=O)C2=CC=C(C=C2)N,168,5138,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),6,167,171.5,4.5
+22668,triadimenol,CC(C)(C)C(O)C(Oc1ccc(Cl)cc1)n2cncn2,135.5,37749,http://www.srcinc.com/what-we-do/product.aspx?id=133,PHYSPROP,3,133.5,138.2,4.7
+16181,Trimethyl borate,COB(OC)OC,-34,8157,http://msds.chem.ox.ac.uk/,academic website,4,-34,-29.3,4.7
+2904,2-methylanthraquinone,Cc1ccc2c(c1)C(=O)c3ccccc3C2=O,172,6515,http://www.alfa.com/en/GP100W.pgm?DSSTK=A14502,Alfa Aesar,2,172,177,5
+6871,diglycolic acid,C(C(=O)O)OCC(=O)O,143,7797,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23758,Alfa Aesar,2,143,148,5
+3227,"3,4-(methylenedioxy)benzyl alcohol",c1cc2c(cc1CO)OCO2,53,9900,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12661,Alfa Aesar,2,53,58,5
+715,"1,2,4-benzenetricarboxylic anhydride",c1cc2c(cc1C(=O)O)C(=O)OC2=O,167,10618,http://www.alfa.com/en/GP100W.pgm?DSSTK=B23003,Alfa Aesar,2,162,167,5
+1876,2-acetylbenzo[b]furan,CC(=O)c1cc2ccccc2o1,71,14690,http://www.alfa.com/en/GP100W.pgm?DSSTK=L13771,Alfa Aesar,2,71,76,5
+18036,"oxirane, 2,3-dimethyl-, trans-",CC1OC1C,-85,17595,http://www.srcinc.com/what-we-do/product.aspx?id=133,PHYSPROP,2,-85,-80,5
+4286,4-(bromomethyl)benzoic acid,c1cc(ccc1CBr)C(=O)O,225,21185,http://www.alfa.com/en/GP100W.pgm?DSSTK=L03371,Alfa Aesar,2,225,230,5
+4984,4-chlorophenoxyacetic acid,c1cc(ccc1OCC(=O)O)Cl,159,24438,http://www.alfa.com/en/GP100W.pgm?DSSTK=A13065,Alfa Aesar,2,159,164,5
+900,"(3-bromo-2,4,6-trimethylphenylcarbamoyl)methyliminodiacetic acid",Cc1cc(c(c(c1NC(=O)CN(CC(=O)O)CC(=O)O)C)Br)C,194,48922,http://www.alfa.com/en/GP100W.pgm?DSSTK=L16086,Alfa Aesar,2,194,199,5
+6186,6-phenylhexanoic acid,c1ccc(cc1)CCCCCC(=O)O,18,71995,http://www.alfa.com/en/GP100W.pgm?DSSTK=A11187,Alfa Aesar,2,18,23,5
+7694,methyl phenylsulfonylacetate,COC(=O)CS(=O)(=O)c1ccccc1,30,483123,http://www.alfa.com/en/GP100W.pgm?DSSTK=L03748,Alfa Aesar,2,30,35,5
+6529,biphenyl-4-carboxamide,c1ccc(cc1)c2ccc(cc2)C(=O)N,228,523754,http://www.alfa.com/en/GP100W.pgm?DSSTK=A16813,Alfa Aesar,2,223,228,5
+27802,aspartic acid,C(C(C(=O)O)N)C(=O)O,275,411,http://chemspider.com/411,EPISuite-ChemSpider,3,270,275,5
+14506,2-bromonaphthalene,Brc1ccc2ccccc2c1,54,10894,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,54,59,5
+7089,ethyl 3-methyl-1h-pyrazole-5-carboxylate,CCOC(=O)c1cc(n[nH]1)C,82,70048,http://www.alfa.com/en/GP100W.pgm?DSSTK=A12304,Alfa Aesar,3,82,87,5
+28318,Nitrofurantoin,C1C(=O)NC(=O)N1/N=C/C2=CC=C(O2)[N+](=O)[O-],268,5036498,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),3,263,268,5
+13776,o-aminobenzamide,O=C(N)c1ccccc1N,113,10298355,http://www.amazon.com/dp/B003XEQTLE,Aldrich Chemical Company; Aldrich Catalog-Handbook of Fine Chemicals; Milwaukee; WI; 1984.,3,108,113,5
+15282,"2-Methyl-1,4-naphthoquinone",O=C2C=C(C)C(=O)c1ccccc12,102,3915,http://msds.chem.ox.ac.uk/,academic website,4,102,107,5
+15400,4-(2-Phenylpropan-2-yl)phenol,CC(C)(c1ccc(O)cc1)c2ccccc2,71.5,11249,http://msds.chem.ox.ac.uk/,academic website,4,70,75,5
+15073,1-Nitro-3-vinylbenzene,O=[N+]([O-])c1cc(C=C)ccc1,-5,61789,http://msds.chem.ox.ac.uk/,academic website,4,-10,-5,5
+28068,Estradiol,C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=C3C=CC(=C4)O,176,5554,http://dx.doi.org/10.1016/j.chemosphere.2013.10.095,Abraham M.H. and Acree Jr. W.E. The solubility of liquid and solid compounds in dry octan-1-ol. Chemosphere (2013),7,173,178,5

@@ -1,6 +1,30 @@
 # conv_qsar_fast
 QSAR/QSPR using descriptor-free molecular embedding, updated for python 3
 
+In the release `python3minimalchange` you will find the version of code which runs under python3 and closely resembles the original code (as opposed to the newest version). You can find it under releases or switch to tag `python3minimalchange` (same button as branch switching).
+
+The newest version has been changed dramatically:
+- splitting datasets has been removed, now each fold/subset should be kept in a separate file. As a result:
+  - file `main/main_cv.py` has seen major changes
+  - file `main/data.py` has been simplified a lot. No more splitting, and no more checking which set is used - every information is now kept in config files.
+  - as a result config files have changed a lot. Unused fields have been removed, new fields appeared:
+    - `cv` - cross-validation or train-val-test?
+    - `fold1`, ..., `foldk` - cross validation splits if `cv: true`
+    - `train`, `val` -  train and valid if `cv: false`
+    - `test` - the test set, always
+  - `scripts/split_datasets.py` includes the code for splitting Abraham, Bradley and Delany datasets (you will find them already calculated and included in `data`)
+  - TOX21 is not cross-valed anymore, instead the split from the challenge is used
+- `main/test.py` has seen major changes, most importantly you get to choose if rocauc and parity plots should be calculated, the plots and jsons with the score are saved. New section `TEST` and new fields (`calculate_parity`, `calculate_rocauc`) appeared in the config files
+- each config file has a full information about the dataset (so that you don't need all those ifs when loading the data), new fields appeared:
+  - `y_index` - label index
+  - `y_label` - label name used for titles of plots
+  - `delimiter` - delimiter used in the data format, used by csv.reader
+  - `skip_line` - some datasets have column names in the first line (set `true`), others don't (set `false`)
+- in the original code TOX21 was not averaged, now it is. New field (`averaging`) in config files appeared and can have the following values:
+  - `mean` - mean value is calculated and set as label (this was originally used for Abraham, Bradley and Delaney)
+  - `max` - max value is set as label (new stuff, for TOX)
+- changes in mutiple files to make the code more readable, removing files that were not used anymore
+
 ## Requirements
 This code relies on [Keras](http://keras.io/) for the machine learning framework, [Theano](http://deeplearning.net/software/theano/) for computations as its back-end, and [RDKit](http://www.rdkit.org/) for parsing molecules from SMILES strings. Plotting is done in [matplotlib](http://matplotlib.org/). All other required packages should be dependencies of Keras, Theano, or RDKit.
 

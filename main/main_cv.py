@@ -1,205 +1,219 @@
-from __future__ import print_function
-from conv_qsar_fast.utils.parsing import input_to_bool
-from conv_qsar_fast.utils.parse_cfg import read_config
-import conv_qsar_fast.utils.reset_layers as reset_layers
-import rdkit.Chem as Chem
-import numpy as np
-import datetime
-import json
-import sys
 import os
-import time
+import sys
+import datetime
+import numpy as np
+from distutils.util import strtobool
 
 from conv_qsar_fast.main.core import build_model, train_model, save_model
 from conv_qsar_fast.main.test import test_model, test_embeddings_demo
 from conv_qsar_fast.main.data import get_data_full
+from conv_qsar_fast.utils.parse_cfg import read_config
 
 if __name__ == '__main__':
-	if len(sys.argv) < 2:
-		print('Usage: {} "settings.cfg"'.format(sys.argv[0]))
-		quit(1)
+    if len(sys.argv) < 2:
+        print('Usage: {} "settings.cfg"'.format(sys.argv[0]))
+        quit(1)
 
-	# Load settings
-	try:
-		config = read_config(sys.argv[1])
-	except:
-		print('Could not read config file {}'.format(sys.argv[1]))
-		quit(1)
+    print(f"Running main_cv for config: {sys.argv[1]}")
+    # Load settings
+    try:
+        config = read_config(sys.argv[1])
+    except:
+        print('Could not read config file {}'.format(sys.argv[1]))
+        quit(1)
 
-	# Get model label
-	try:
-		fpath = config['IO']['model_fpath']
-	except KeyError:
-		print('Must specify model_fpath in IO in config')
-		quit(1)
+    # Get model label
+    try:
+        fpath = config['IO']['model_fpath']
+    except KeyError:
+        print('Must specify model_fpath in IO in config')
+        quit(1)
 
+    # make directory
+    try:
+        os.makedirs(os.path.dirname(fpath))
+    except:  # folder exists
+        pass
 
-	###################################################################################
-	### DEFINE DATA 
-	###################################################################################
+    ###################################################################################
+    # # # DEFINE DATA
+    ###################################################################################
 
-	data_kwargs = config['DATA']
-	if '__name__' in data_kwargs:
-		del data_kwargs['__name__'] #  from configparser
+    data_kwargs = config['DATA']
+    if '__name__' in data_kwargs:
+        del data_kwargs['__name__']
 
+    if 'molecular_attributes' in data_kwargs: 
+        data_kwargs['molecular_attributes'] = strtobool(data_kwargs['molecular_attributes'])
 
+    if 'smiles_index' in data_kwargs:
+        data_kwargs['smiles_index'] = int(data_kwargs['smiles_index'])
 
-	if 'shuffle_seed' in data_kwargs:
-		data_kwargs['shuffle_seed'] = int(data_kwargs['shuffle_seed'])
-	else:
-		data_kwargs['shuffle_seed'] = int(time.time())
+    if 'y_index' in data_kwargs:
+        data_kwargs['y_index'] = int(data_kwargs['y_index'])
 
-	if 'molecular_attributes' in data_kwargs: 
-		data_kwargs['molecular_attributes'] = input_to_bool(data_kwargs['molecular_attributes'])
+    if 'skipline' in data_kwargs:
+        data_kwargs['skipline'] = strtobool(data_kwargs['skipline'])
 
-	if 'cv_folds' in data_kwargs:
-		try:
-			os.makedirs(os.path.dirname(fpath))
-		except: # folder exists
-			pass
-		if '<this_fold>' in data_kwargs['cv_folds']:
-			cv_folds = data_kwargs['cv_folds']
-			total_folds = int(cv_folds.split('/')[1])
-			all_cv_folds = ['{}/{}'.format(i + 1, total_folds) for i in range(total_folds)]
-		else:
-			all_cv_folds = [data_kwargs['cv_folds']]
+    # defining data split: cross-validation or regular train-valid-test
+    if strtobool(data_kwargs['cv']):
+        fold_keys = [key for key in data_kwargs if "fold" in key]
+        all_folds = []
+        for key in fold_keys:
+            all_folds.append(data_kwargs[key])
+            del data_kwargs[key]
 
-	# Iterate through all folds
-	ref_fpath = fpath
-	for cv_fold in all_cv_folds:
+        trains = []
+        vals = []
+        for val_fold in all_folds:
+            trains.append([fold for fold in all_folds if fold != val_fold])
+            vals.append([val_fold, ])
+        splits = list(zip(trains, vals))
+    else:
+        splits = list(zip([[data_kwargs['train'], ], ], [[data_kwargs['val'], ], ]))
+        del data_kwargs['train']
+        del data_kwargs['val']
 
-		###################################################################################
-		### BUILD MODEL
-		###################################################################################
+    # test set is always test set
+    test_path = [data_kwargs['test'], ]
+    del data_kwargs['test']
+    del data_kwargs['cv']
 
-		print('...building model')
-		try:
-			kwargs = config['ARCHITECTURE']
-			if '__name__' in kwargs: del kwargs['__name__'] #  from configparser
-			if 'batch_size' in config['TRAINING']:
-				kwargs['padding'] = int(config['TRAINING']['batch_size']) > 1
-			if 'embedding_size' in kwargs: 
-				kwargs['embedding_size'] = int(kwargs['embedding_size'])
-			if 'hidden' in kwargs: 
-				kwargs['hidden'] = int(kwargs['hidden'])
-			if 'hidden2' in kwargs:
-				kwargs['hidden2'] = int(kwargs['hidden2'])
-			if 'depth' in kwargs: 
-				kwargs['depth'] = int(kwargs['depth'])
-			if 'scale_output' in kwargs: 
-				kwargs['scale_output'] = float(kwargs['scale_output'])
-			if 'dr1' in kwargs:
-				kwargs['dr1'] = float(kwargs['dr1'])
-			if 'dr2' in kwargs:
-				kwargs['dr2'] = float(kwargs['dr2'])
-			if 'output_size' in kwargs:
-				kwargs['output_size'] = int(kwargs['output_size'])
-			if 'sum_after' in kwargs:
-				kwargs['sum_after'] = input_to_bool(kwargs['sum_after'])
-			if 'optimizer' in kwargs:
-				kwargs['optimizer'] = kwargs['optimizer']
-			 
-			if 'molecular_attributes' in config['DATA']:
-				kwargs['molecular_attributes'] = config['DATA']['molecular_attributes']
+    # Iterate through all folds
+    ref_fpath = fpath
+    for fold_idx, (train_paths, validation_path) in enumerate(splits):
+        fpath = ref_fpath.replace('<this_fold>', str(1+fold_idx))
 
-			model = build_model(**kwargs)
-			print('...built untrained model')
-		except KeyboardInterrupt:
-			print('User cancelled model building')
-			quit(1)
+        ###################################################################################
+        # # # BUILD MODEL
+        ###################################################################################
 
+        print('...building model')
+        try:
+            kwargs = config['ARCHITECTURE']
+            if '__name__' in kwargs: del kwargs['__name__']
+            if 'embedding_size' in kwargs: 
+                kwargs['embedding_size'] = int(kwargs['embedding_size'])
+            if 'hidden' in kwargs: 
+                kwargs['hidden'] = int(kwargs['hidden'])
+            if 'hidden2' in kwargs:
+                kwargs['hidden2'] = int(kwargs['hidden2'])
+            if 'depth' in kwargs: 
+                kwargs['depth'] = int(kwargs['depth'])
+            if 'dr1' in kwargs:
+                kwargs['dr1'] = float(kwargs['dr1'])
+            if 'dr2' in kwargs:
+                kwargs['dr2'] = float(kwargs['dr2'])
+            if 'output_size' in kwargs:
+                kwargs['output_size'] = int(kwargs['output_size'])
+            if 'optimizer' in kwargs:
+                kwargs['optimizer'] = kwargs['optimizer']
+             
+            if 'molecular_attributes' in config['DATA']:
+                kwargs['molecular_attributes'] = config['DATA']['molecular_attributes']
 
-		print('Using CV fold {}'.format(cv_fold))
-		data_kwargs['cv_folds'] = cv_fold
-		fpath = ref_fpath.replace('<this_fold>', cv_fold.split('/')[0])
-		data = get_data_full(**data_kwargs)
+            model = build_model(**kwargs)
+            print('...built untrained model')
+        except KeyboardInterrupt:
+            print('User cancelled model building')
+            quit(1)
 
-		###################################################################################
-		### LOAD WEIGHTS?
-		###################################################################################
+        ###################################################################################
+        # # # LOAD DATA
+        ###################################################################################
 
-		if 'weights_fpath' in config['IO']:
-			weights_fpath = config['IO']['weights_fpath']
-		else:
-			weights_fpath = fpath + '.h5'
+        print(f"Using CV fold {1+fold_idx}/{len(splits)}")
+        data = get_data_full(train_paths=train_paths, validation_path=validation_path, test_path=test_path, **data_kwargs)
 
-		try:
-			use_old_weights = input_to_bool(config['IO']['use_existing_weights'])
-		except KeyError:
-			print('Must specify whether or not to use existing model weights')
-			quit(1)
+        ###################################################################################
+        # # # LOAD WEIGHTS?
+        ###################################################################################
 
-		if use_old_weights and os.path.isfile(weights_fpath):
-			model.load_weights(weights_fpath)
-			print('...loaded weight information')
+        if 'weights_fpath' in config['IO']:
+            weights_fpath = config['IO']['weights_fpath']
+        else:
+            weights_fpath = fpath + '.h5'
 
-			# Reset final dense?
-			if 'reset_final' in config['IO']:
-				if config['IO']['reset_final'] in ['true', 'y', 'Yes', 'True', '1']:
-					layer = model.layers[-1]
-					layer.W.set_value((layer.init(layer.W.shape.eval()).eval()).astype(np.float32))
-					layer.b.set_value(np.zeros(layer.b.shape.eval(), dtype=np.float32))
+        try:
+            use_old_weights = strtobool(config['IO']['use_existing_weights'])
+        except KeyError:
+            print('Must specify whether or not to use existing model weights')
+            quit(1)
 
-		elif use_old_weights and not os.path.isfile(weights_fpath):
-			print('Weights not found at specified path {}'.format(weights_fpath))
-			quit(1)
-		else:
-			pass
+        if use_old_weights and os.path.isfile(weights_fpath):
+            model.load_weights(weights_fpath)
+            print('...loaded weight information')
 
-		###################################################################################
-		### CHECK FOR TESTING CONDITIONS
-		###################################################################################
+            # Reset final dense?
+            if 'reset_final' in config['IO']:
+                if config['IO']['reset_final'] in ['true', 'y', 'Yes', 'True', '1']:
+                    layer = model.layers[-1]
+                    layer.W.set_value((layer.init(layer.W.shape.eval()).eval()).astype(np.float32))
+                    layer.b.set_value(np.zeros(layer.b.shape.eval(), dtype=np.float32))
 
-		# Testing embeddings?
-		try:
-			if input_to_bool(config['TESTING']['test_embedding']):
-				test_embeddings_demo(model, fpath)
-				quit(1)
-		except KeyError:
-			pass
+        elif use_old_weights and not os.path.isfile(weights_fpath):
+            print('Weights not found at specified path {}'.format(weights_fpath))
+            quit(1)
+        else:
+            pass
 
-		###################################################################################
-		### TRAIN THE MODEL
-		###################################################################################
+        ###################################################################################
+        # # # TRAIN THE MODEL
+        ###################################################################################
 
-		# Train model
-		try:
-			print('...training model')
-			kwargs = config['TRAINING']
-			if '__name__' in kwargs:
-				del kwargs['__name__'] #  from configparser
-			if 'nb_epoch' in kwargs:
-				kwargs['nb_epoch'] = int(kwargs['nb_epoch'])
-			if 'batch_size' in kwargs:
-				kwargs['batch_size'] = int(kwargs['batch_size'])
-			if 'patience' in kwargs:
-				kwargs['patience'] = int(kwargs['patience'])
-			(model, loss, val_loss) = train_model(model, data, **kwargs)
-			print('...trained model')
-		except KeyboardInterrupt:
-			pass
+        # Train model
+        try:
+            print('...training model')
+            kwargs = config['TRAINING']
+            if '__name__' in kwargs:
+                del kwargs['__name__']  # from configparser
+            if 'nb_epoch' in kwargs:
+                kwargs['nb_epoch'] = int(kwargs['nb_epoch'])
+            if 'batch_size' in kwargs:
+                kwargs['batch_size'] = int(kwargs['batch_size'])
+            if 'patience' in kwargs:
+                kwargs['patience'] = int(kwargs['patience'])
+            (model, loss, val_loss) = train_model(model, data, **kwargs)
+            print('...trained model')
+        except KeyboardInterrupt:
+            pass
 
-		###################################################################################
-		### SAVE MODEL
-		###################################################################################
+        ###################################################################################
+        # # # SAVE MODEL
+        ###################################################################################
 
-		# Get the current time
-		tstamp = datetime.datetime.utcnow().strftime('%m-%d-%Y_%H-%M')
-		print('...saving model')
-		save_model(model, 
-			loss,
-			val_loss,
-			fpath = fpath,
-			config = config, 
-			tstamp = tstamp)
-		print('...saved model')
+        # Get the current time
+        tstamp = datetime.datetime.utcnow().strftime('%m-%d-%Y_%H-%M')
+        print('...saving model')
+        save_model(model, loss, val_loss, fpath=fpath, config=config, tstamp=tstamp)
+        print('...saved model')
 
-		###################################################################################
-		### TEST MODEL
-		###################################################################################
+        ###################################################################################
+        # # # TEST MODEL
+        ###################################################################################
 
-		print('...testing model')
-		data_withresiduals, _, _ = test_model(model, data, fpath, tstamp = tstamp,
-			batch_size = int(config['TRAINING']['batch_size']))
-		print('...tested model')
+        print('...testing model')
+        test_kwargs = config['TEST']
 
+        calculate_parity = False
+        if 'calculate_parity' in test_kwargs:
+            calculate_parity = strtobool(test_kwargs['calculate_parity'])
+
+        calculate_rocauc = False
+        if 'calculate_rocauc' in test_kwargs:
+            calculate_rocauc = strtobool(test_kwargs['calculate_rocauc'])
+
+        _ = test_model(model, data, fpath, tstamp=tstamp, batch_size=int(config['TRAINING']['batch_size']),
+                       calculate_parity=calculate_parity, calculate_rocauc=calculate_rocauc)
+        print('...tested model')
+
+        ###################################################################################
+        # # # TEST EMBEDDINGS?
+        ###################################################################################
+
+        # Testing embeddings?
+        try:
+            if strtobool(config['TESTING']['test_embedding']):
+                test_embeddings_demo(model, fpath)
+        except KeyError:
+            pass

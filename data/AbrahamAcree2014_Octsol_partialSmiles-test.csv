@@ -1,0 +1,50 @@
+Compound,Smiles,Solvent,Solvent Smiles,,logS/M
+"1,2,3,5-Tetrachlorobenzene",ClC1=C(C(=CC(=C1)Cl)Cl)Cl,1-octanol,n/a,1.412537545,0.15
+"1,2,4-Tribromobenzene",BrC1=C(C=C(C=C1)Br)Br,1-octanol,n/a,0.776247117,-0.11
+"1,2-Dichlorobenzene",ClC1=C(C=CC=C1)Cl,1-octanol,n/a,3.698281798,0.568
+"1,3-Dibromobenzene",BrC1=CC(=CC=C1)Br,1-octanol,n/a,3.564511334,0.552
+"2,4,6-Trichlorophenol",ClC1=C(C(=CC(=C1)Cl)Cl)O,1-octanol,n/a,1.77827941,0.25
+"2,4-Dichlorophenol",ClC1=C(C=CC(=C1)Cl)O,1-octanol,n/a,2.238721139,0.35
+2-Chlorobenzoic acid,ClC1=C(C(=O)O)C=CC=C1,1-octanol,n/a,0.70307232,-0.153
+3-Bromobenzoic acid,BrC=1C=C(C(=O)O)C=CC1,1-octanol,n/a,0.851138038,-0.07
+4-Chloronitrobenzene,ClC1=CC=C(C=C1)[N+](=O)[O-],1-octanol,n/a,0.52480746,-0.28
+Acenaphthene,C1CC2=CC=CC3=CC=CC1=C23,1-octanol,n/a,0.257039578,-0.59
+Acetanilide,C(C)(=O)NC1=CC=CC=C1,1-octanol,n/a,0.707945784,-0.15
+Acetonitrile,C(C)#N,1-octanol,n/a,9.616122784,0.983
+Aminopyrine,CN(C)C1=C(C)N(C)N(c2ccccc2)C1=O,1-octanol,n/a,1,0
+Atrazine,CCNc1nc(Cl)nc(NC(C)C)n1,1-octanol,n/a,0.047863009,-1.32
+Benzoic acid,C(C1=CC=CC=C1)(=O)O,1-octanol,n/a,0.87096359,-0.06
+Butyl 4-aminobenzoate,NC1=CC=C(C(=O)OCCCC)C=C1,1-octanol,n/a,1.348962883,0.13
+Carbon tetrachloride,C(Cl)(Cl)(Cl)Cl,1-octanol,n/a,5.211947111,0.717
+Chrysene,C1=CC=CC=2C3=CC=C4C=CC=CC4=C3C=CC12,1-octanol,n/a,0.002951209,-2.53
+Coronene,C1=CC2=CC=C3C=CC4=CC=C5C=CC6=CC=C1C1=C6C5=C4C3=C21,1-octanol,n/a,0.000389045,-3.41
+Fentiazac,OC(=O)Cc1sc(nc1c2ccc(Cl)cc2)c3ccccc3,1-octanol,n/a,0.169824365,-0.77
+Fenuron,CN(C)C(=O)Nc1ccccc1,1-octanol,n/a,0.169824365,-0.77
+Flurbiprofen,CC(C(O)=O)c1ccc(c(F)c1)c2ccccc2,1-octanol,n/a,0.630957344,-0.2
+Furosemide,N[S](=O)(=O)c1cc(C(O)=O)c(NCc2occc2)cc1Cl,1-octanol,n/a,0.008128305,-2.09
+Heptachlor,ClC1C=CC2C1C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl,1-octanol,n/a,0.257039578,-0.59
+Hexabromobenzene,BrC1=C(C(=C(C(=C1Br)Br)Br)Br)Br,1-octanol,n/a,0.002398833,-2.62
+Hexachlorobutadiene,ClC(=C(C(=C(Cl)Cl)Cl)Cl)Cl,1-octanol,n/a,3.16227766,0.5
+Hydrocortisone,C[C@]12CCC(=O)C=C1CC[C@H]3[C@@H]4CC[C@](O)(C(=O)CO)[C@@]4(C)C[C@H](O)[C@H]23,1-octanol,n/a,0.015848932,-1.8
+Indole-3-acetic acid,N1C=C(C2=CC=CC=C12)CC(=O)O,1-octanol,n/a,0.257039578,-0.59
+Indomethacin ethyl ester,CCOC(=O)Cc1c(C)n(C(=O)c2ccc(Cl)cc2)c3ccc(OC)cc13,1-octanol,n/a,0.013803843,-1.86
+Isazophos,CCO[P](=S)(OCC)Oc1nn(C(C)C)c(Cl)n1,1-octanol,n/a,3.16227766,0.5
+Levonorgestrel,CC[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@H]34)[C@@H]1CC[C@@]2(O)C#C,1-octanol,n/a,0.014791084,-1.83
+Acyclovir,NC1=NC(=O)c2ncn(COCCO)c2N1,1-octanol,n/a,0.000109648,-3.96
+Niflumic Acid,OC(=O)c1cccnc1Nc2cccc(c2)C(F)(F)F,1-octanol,n/a,0.125314117,-0.902
+PCB-138,Clc1ccc(c(Cl)c1Cl)c2cc(Cl)c(Cl)cc2Cl,1-octanol,n/a,1,0
+PCB-153,Clc1cc(Cl)c(cc1Cl)c2cc(Cl)c(Cl)cc2Cl,1-octanol,n/a,0.616595002,-0.21
+Pentachlorophenol,ClC1=C(C(=C(C(=C1O)Cl)Cl)Cl)Cl,1-octanol,n/a,0.741310241,-0.13
+Pentachlorotoluene,ClC1=C(C(=C(C(=C1C)Cl)Cl)Cl)Cl,1-octanol,n/a,0.027542287,-1.56
+Pentazocin,N1=NN=NN=CC=C1,1-octanol,n/a,0.257039578,-0.59
+Perylene,C1=CC=C2C=CC=C3C4=CC=CC5=CC=CC(C1=C23)=C45,1-octanol,n/a,0.003019952,-2.52
+Phenanthrene,C1=CC=CC=2C3=CC=CC=C3C=CC12,1-octanol,n/a,0.323593657,-0.49
+Propylene glycol,C(C(C)O)O,1-octanol,n/a,6.760829754,0.83
+p-Xylene,C1(=CC=C(C=C1)C)C,1-octanol,n/a,4.064433292,0.609
+Pyrene,C1=CC=C2C=CC3=CC=CC4=CC=C1C2=C34,1-octanol,n/a,0.120226443,-0.92
+"S6,9-Bis(propanoyl-oxymethyl)-6-mercaptopurine",CCC(=O)OCSc1ncnc2n(COC(=O)CC)cnc12,1-octanol,n/a,0.036307805,-1.44
+Simvastatin,CCC(C)(C)C(=O)O[C@H]1C[C@@H](C)C=C2C=C[C@H](C)[C@H](CC[C@@H]3C[C@@H](O)CC(=O)O3)[C@@H]12,1-octanol,n/a,0.253512863,-0.596
+Sulfacetamide,CC(=O)N[S](=O)(=O)c1ccc(N)cc1,1-octanol,n/a,0.009332543,-2.03
+Sulfapyridine,Nc1ccc(cc1)[S](=O)(=O)Nc2ccccn2,1-octanol,n/a,0.000501187,-3.3
+Sulindac,CC\1=C(CC(O)=O)c2cc(F)ccc2C1=C\c3ccc(cc3)[S](C)=O,1-octanol,n/a,0.018620871,-1.73
+trans-Stilbene,C1(=CC=CC=C1)\C=C\C1=CC=CC=C1,1-octanol,n/a,0.079432823,-1.1

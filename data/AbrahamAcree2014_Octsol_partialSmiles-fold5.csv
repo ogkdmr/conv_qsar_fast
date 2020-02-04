@@ -1,0 +1,41 @@
+Compound,Smiles,Solvent,Solvent Smiles,,logS/M
+"2,4,5-Trichlorotoluene",ClC1=C(C=C(C(=C1)Cl)Cl)C,1-octanol,n/a,0.407380278,-0.39
+2-Aminobenzoic acid,NC1=C(C(=O)O)C=CC=C1,1-octanol,n/a,0.383707245,-0.416
+"3,4-Dimethoxybenzoic acid",COC=1C=C(C(=O)O)C=CC1OC,1-octanol,n/a,0.038904514,-1.41
+4-Acetylaminophenol Paracetamol,N(C(=O)C)C1=CC=C(O)C=C1.C(C)(=O)NC1=CC=C(C=C1)O,1-octanol,n/a,0.153108746,-0.815
+4-Aminobenzoic acid,NC1=CC=C(C(=O)O)C=C1,1-octanol,n/a,0.158489319,-0.8
+5-Amino-o-cresol,NC1=CC=C(C(=C1)O)C,1-octanol,n/a,0.173780083,-0.76
+6-Mercaptopurine,SC1=C2NC=NC2=NC=N1,1-octanol,n/a,0.001513561,-2.82
+Acetone,CC(=O)C,1-octanol,n/a,6.854882265,0.836
+Antipyrine,CN1N(C(=O)C=C1C)c2ccccc2,1-octanol,n/a,0.645654229,-0.19
+Benzo[a]pyrene,C1=CC=C2C=CC=3C=C4C(=C5C=CC1=C2C53)C=CC=C4,1-octanol,n/a,0.028183829,-1.55
+Benzoin,C1(=CC=CC=C1)C(=O)C(O)C1=CC=CC=C1,1-octanol,n/a,0.018365383,-1.736
+Butanol,C(CCC)O,1-octanol,n/a,5.495408739,0.74
+Carbazole,C1=CC=CC=2C3=CC=CC=C3NC12,1-octanol,n/a,0.051286138,-1.29
+Cholesterol,CC(C)CCC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3CC=C4C[C@@H](O)CC[C@]4(C)[C@H]3CC[C@]12C,1-octanol,n/a,0.337287309,-0.472
+Diclofenac,OC(=O)Cc1ccccc1Nc2c(Cl)cccc2Cl,1-octanol,n/a,0.077624712,-1.11
+Ethyl 4-hydroxybenzoate,OC1=CC=C(C(=O)OCC)C=C1,1-octanol,n/a,0.944060876,-0.025
+Ethyl acetate,C(C)(=O)OCC,1-octanol,n/a,5.046612976,0.703
+Fenbufen,OC(=O)CCC(=O)c1ccc(cc1)c2ccccc2,1-octanol,n/a,0.012022644,-1.92
+Fenchlorphos,CO[P](=S)(OC)Oc1cc(Cl)c(Cl)cc1Cl,1-octanol,n/a,0.691830971,-0.16
+Fluorodifen,[O-][N+](=O)c1ccc(Oc2ccc(cc2[N+]([O-])=O)C(F)(F)F)cc1,1-octanol,n/a,0.030199517,-1.52
+Fumaric Acid,C(\C=C\C(=O)O)(=O)O,1-octanol,n/a,0.075857758,-1.12
+Heptachlor epoxide,ClC1C2OC2C3C1C4(Cl)C(=C(Cl)C3(Cl)C4(Cl)Cl)Cl,1-octanol,n/a,0.123026877,-0.91
+Hexachloroethane,ClC(C(Cl)(Cl)Cl)(Cl)Cl,1-octanol,n/a,0.588843655,-0.23
+Isopropyl myristate,C(CCCCCCCCCCCCC)(=O)OC(C)C,1-octanol,n/a,1.56675107,0.195
+Ketoprofen,OC(=O)C(C)C1=CC(C(=O)C2=CC=CC=C2)=CC=C1,1-octanol,n/a,0.40926066,-0.388
+Lovastatin,CC[C@H](C)C(=O)O[C@H]1C[C@@H](C)C=C2C=C[C@H](C)[C@H](CC[C@@H]3C[C@@H](O)CC(=O)O3)[C@@H]12,1-octanol,n/a,0.010839269,-1.965
+Methanedienone,C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@H]3CC[C@]12C,1-octanol,n/a,0.347536161,-0.459
+Metolachlor,CCc1cccc(C)c1N(C(C)COC)C(=O)CCl,1-octanol,n/a,2.951209227,0.47
+Metoxuron,COc1ccc(NC(=O)N(C)C)cc1Cl,1-octanol,n/a,0.087096359,-1.06
+Naphthacene,C1=CC=CC2=CC3=CC4=CC=CC=C4C=C3C=C12,1-octanol,n/a,0.005370318,-2.27
+Nicotinic acid,C(C1=CN=CC=C1)(=O)O,1-octanol,n/a,0.027542287,-1.56
+Nitrofurantoin,[O-][N+](=O)c1oc(cc1)/C=N/N2CC(=O)NC2=O,1-octanol,n/a,0.000436516,-3.36
+PCB-3,Clc1ccc(cc1)c2ccccc2,1-octanol,n/a,0.602559586,-0.22
+PCB-155,Oc1cc(Cl)c(c(Cl)c1O)c2c(Cl)cc(Cl)cc2Cl,1-octanol,n/a,0.602559586,-0.22
+PCB-194,Clc1cc(c(Cl)c(Cl)c1Cl)c2cc(Cl)c(Cl)c(Cl)c2Cl,1-octanol,n/a,1.174897555,0.07
+"PCB-209, Decachlorobiphenyl",Clc1c(Cl)c(Cl)c(c(Cl)c1Cl)c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl,1-octanol,n/a,0.001698244,-2.77
+Sulfamerazine,Cc1ccnc(N[S](=O)(=O)c2ccc(N)cc2)n1,1-octanol,n/a,0.000440555,-3.356
+Sulfisomidine,Cc1cc(N[S](=O)(=O)c2ccc(N)cc2)nc(C)n1,1-octanol,n/a,0.000870964,-3.06
+Theophylline,N1(C)C(=O)N(C)C=2N=CNC2C1=O,1-octanol,n/a,0.01023293,-1.99
+Triphenylene,C1=CC=CC=2C3=CC=CC=C3C3=CC=CC=C3C12,1-octanol,n/a,0.016982437,-1.77

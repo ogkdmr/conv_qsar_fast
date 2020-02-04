@@ -1,0 +1,41 @@
+Compound,Smiles,Solvent,Solvent Smiles,,logS/M
+"1,2,3,4-Tetrachloronaphthalene",ClC1=C(C(=C(C2=CC=CC=C12)Cl)Cl)Cl,1-octanol,n/a,0.016595869,-1.78
+"1,3,5-Trichlorobenzene",ClC1=CC(=CC(=C1)Cl)Cl,1-octanol,n/a,0.794328235,-0.1
+"1,3-Dichlorobenzene",ClC1=CC(=CC=C1)Cl,1-octanol,n/a,3.698281798,0.568
+1-Nitronaphthalene,[N+](=O)([O-])C1=CC=CC2=CC=CC=C12,1-octanol,n/a,0.377572191,-0.423
+"3,4-Dichloronitrobenzene",ClC=1C=C(C=CC1Cl)[N+](=O)[O-],1-octanol,n/a,0.954992586,-0.02
+4-Bromoaniline,BrC1=CC=C(N)C=C1,1-octanol,n/a,2.691534804,0.43
+4-Nitrobenzoic acid,[N+](=O)([O-])C1=CC=C(C(=O)O)C=C1,1-octanol,n/a,0.06180164,-1.209
+17a-Methyltestosterone,C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C,1-octanol,n/a,0.251767693,-0.599
+Acetylsalicylic acid,C(C)(=O)OC=1C(C(=O)O)=CC=CC1,1-octanol,n/a,0.204173794,-0.69
+a-hexachlorocyclohexane,Cl[C@H]1[C@@H](Cl)[C@H](Cl)[C@H](Cl)[C@@H](Cl)[C@@H]1Cl,1-octanol,n/a,0.064565423,-1.19
+Atenolol,CC(C)NCC(O)COc1ccc(CC(N)=O)cc1,1-octanol,n/a,0.012331048,-1.909
+Barbital,CCC1(CC)C(=O)NC(=O)NC1=O,1-octanol,n/a,0.120226443,-0.92
+"Benzocaine, Ethyl 4-aminobenzoate",CCOC(=O)c1ccc(N)cc1,1-octanol,n/a,0.398107171,-0.4
+Ethyl 4-aminobenzoate,NC1=CC=C(C(=O)OCC)C=C1,1-octanol,n/a,0.489778819,-0.31
+Biphenyl,C1(=CC=CC=C1)C1=CC=CC=C1,1-octanol,n/a,0.741310241,-0.13
+Butane,CCCC,1-octanol,n/a,4.954501908,0.695
+Butyl 4-hydroxybenzoate,OC1=CC=C(C(=O)OCCCC)C=C1,1-octanol,n/a,1.794733627,0.254
+"b-Chlordane, trans-Chlordane",Cl[C@H]1C[C@@H]2[C@H]([C@@H]1Cl)[C@@]3(Cl)C(=C(Cl)[C@]2(Cl)C3(Cl)Cl)Cl,1-octanol,n/a,0.407380278,-0.39
+Dimetridazole,Cn1c(C)ncc1[N+]([O-])=O,1-octanol,n/a,0.079432823,-1.1
+Diazepam,CN1C(=O)CN=C(c2ccccc2)c3cc(Cl)ccc13,1-octanol,n/a,0.097723722,-1.01
+Hexachlorobenzene,ClC1=C(C(=C(C(=C1Cl)Cl)Cl)Cl)Cl,1-octanol,n/a,0.015848932,-1.8
+Hexamethylbenzene,CC1=C(C(=C(C(=C1C)C)C)C)C,1-octanol,n/a,0.128824955,-0.89
+Hexane,CCCCCC,1-octanol,n/a,3.84591782,0.585
+Lindane,ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl,1-octanol,n/a,0.218776162,-0.66
+Mestanolone,C[C@]1(O)CC[C@H]2[C@@H]3CC[C@H]4CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C,1-octanol,n/a,0.097498964,-1.011
+Nitrobenzene,[N+](=O)([O-])C1=CC=CC=C1,1-octanol,n/a,4.897788194,0.69
+PCB-8,Clc1ccc(cc1)c2ccccc2Cl,1-octanol,n/a,1.258925412,0.1
+PCB-28,Clc1ccc(cc1)c2ccc(Cl)cc2Cl,1-octanol,n/a,0.741310241,-0.13
+"PCB-52, 2,2?,5,5?-Tetrachlorobiphenyl",Clc1ccc(Cl)c(c1)c2cc(Cl)ccc2Cl,1-octanol,n/a,0.316227766,-0.5
+"PCB-61, 2,3,4,5-Tetrachlorobiphenyl",Clc1cc(c2ccccc2)c(Cl)c(Cl)c1Cl,1-octanol,n/a,0.363078055,-0.44
+Phenobarbital,CCC1(C(=O)NC(=O)NC1=O)c2ccccc2,1-octanol,n/a,0.081283052,-1.09
+Phenol,C1(=CC=CC=C1)O,1-octanol,n/a,8.7096359,0.94
+Pimozide,Fc1ccc(cc1)C(CCCN2CCC(CC2)N3C(=O)Nc4ccccc34)c5ccc(F)cc5,1-octanol,n/a,0.025703958,-1.59
+Prednisolone,C[C@]12C[C@H](O)[C@H]3[C@@H](CCC4=CC(=O)C=C[C@]34C)[C@@H]1CC[C@]2(O)C(=O)CO,1-octanol,n/a,0.023988329,-1.62
+Salicylic acid,C(C=1C(O)=CC=CC1)(=O)O,1-octanol,n/a,1.412537545,0.15
+Sulfanilamide,S(=O)(C1=CC=C(C=C1)N)(=O)N,1-octanol,n/a,0.003235937,-2.49
+Thianthrene,C1=CC=CC=2SC3=CC=CC=C3SC12,1-octanol,n/a,0.034673685,-1.46
+Thioxanthen-9-one,C1=CC=CC=2SC3=CC=CC=C3C(C12)=O,1-octanol,n/a,1.042317429,0.018
+Triamterene,Nc1nc(N)c2nc(c3ccccc3)c(N)nc2n1,1-octanol,n/a,0.000211836,-3.674
+Xanthene,C1=CC=CC=2OC3=CC=CC=C3CC12,1-octanol,n/a,0.24043628,-0.619

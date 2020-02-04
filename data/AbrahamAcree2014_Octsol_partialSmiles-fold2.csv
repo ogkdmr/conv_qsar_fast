@@ -1,0 +1,43 @@
+Compound,Smiles,Solvent,Solvent Smiles,,logS/M
+"1,2,4,5-Tetrachlorobenzene",ClC1=C(C=C(C(=C1)Cl)Cl)Cl,1-octanol,n/a,0.1,-1
+"1,4-Dichlorobenzene",ClC1=CC=C(C=C1)Cl,1-octanol,n/a,1.479108388,0.17
+"1-Methoxy-2,3,4-trichlorobenzene",COC1=C(C(=C(C=C1)Cl)Cl)Cl,1-octanol,n/a,0.380189396,-0.42
+1-Methylfluorene,CC1=CC=CC=2C3=CC=CC=C3CC12,1-octanol,n/a,0.27542287,-0.56
+"2,3,4-Trichloroanisole",ClC1=C(C=CC(=C1Cl)Cl)OC,1-octanol,n/a,0.436515832,-0.36
+"2,3,4-Trichloronitrobenzene",ClC1=C(C=CC(=C1Cl)Cl)[N+](=O)[O-],1-octanol,n/a,0.537031796,-0.27
+"2,5-Dihydroxybenzoic acid",OC1=C(C(=O)O)C=C(C=C1)O,1-octanol,n/a,0.741310241,-0.13
+"2-Methyl-3,5-dinitrobenzoic acid",CC1=C(C(=O)O)C=C(C=C1[N+](=O)[O-])[N+](=O)[O-],1-octanol,n/a,0.078886012,-1.103
+3-Methoxybenzoic acid,COC=1C=C(C(=O)O)C=CC1,1-octanol,n/a,0.083176377,-1.08
+3-Methylbenzoic acid,CC=1C=C(C(=O)O)C=CC1,1-octanol,n/a,1.140249788,0.057
+4-Bromobenzoic acid,BrC1=CC=C(C(=O)O)C=C1,1-octanol,n/a,0.077624712,-1.11
+4-Hydroxybenzoic acid,OC1=CC=C(C(=O)O)C=C1,1-octanol,n/a,0.662216504,-0.179
+9-Fluorenone,C1=CC=CC=2C3=CC=CC=C3C(C12)=O,1-octanol,n/a,0.429536427,-0.367
+Benzil,C1(=CC=CC=C1)C(=O)C(=O)C1=CC=CC=C1,1-octanol,n/a,0.128824955,-0.89
+Benzyl Alcohol,C(C1=CC=CC=C1)O,1-octanol,n/a,4.808393484,0.682
+Bifonazole,c1ccc(cc1)C(n2ccnc2)c3ccc(cc3)c4ccccc4,1-octanol,n/a,0.035156044,-1.454
+Cyclohexane,C1CCCCC1,1-octanol,n/a,4.634469197,0.666
+Dibenzofuran,C1=CC=CC=2OC3=C(C21)C=CC=C3,1-octanol,n/a,0.537031796,-0.27
+Dieldrin,ClC1=C(Cl)C2(Cl)C3C4CC(C5OC45)C3C1(Cl)C2(Cl)Cl,1-octanol,n/a,0.114815362,-0.94
+Diphenylamine,C1(=CC=CC=C1)NC1=CC=CC=C1,1-octanol,n/a,1.071519305,0.03
+Endrin,ClC1=C(Cl)C2(Cl)C3C4CC(C5OC45)C3C1(Cl)C2(Cl)Cl,1-octanol,n/a,0.120226443,-0.92
+Fluoranthene,C1=CC=C2C=CC=C3C4=CC=CC=C4C1=C23,1-octanol,n/a,0.173780083,-0.76
+Gentisic acid,C(C=1C(O)=CC=C(O)C1)(=O)O,1-octanol,n/a,0.741310241,-0.13
+Griseofulvin,COC1CC(=O)C[C@@H](C)[C@]12Oc3c(Cl)c(OC)cc(OC)c3C2=O,1-octanol,n/a,0.003388442,-2.47
+Indomethacin,COc1ccc2n(c(C)c(CC(O)=O)c2c1)C(=O)c3ccc(Cl)cc3,1-octanol,n/a,0.033884416,-1.47
+Methanol,CO,1-octanol,n/a,12.5025903,1.097
+Methyl 4-hydroxybenzoate,OC1=CC=C(C(=O)OC)C=C1,1-octanol,n/a,0.851138038,-0.07
+N-Acetylacyclovir,CC(=O)NC1=Nc2n(COCCO)cnc2C(=O)N1,1-octanol,n/a,9.40E-05,-4.027
+Nadolol,CC(C)(C)NCC(O)COc1cccc2C[C@@H](O)[C@@H](O)Cc12,1-octanol,n/a,0.004709773,-2.327
+Naphthalene,C1=CC=CC2=CC=CC=C12,1-octanol,n/a,0.436515832,-0.36
+PBC-101,Clc1ccc(Cl)c(c1)c2cc(Cl)c(Cl)cc2Cl,1-octanol,n/a,0.588843655,-0.23
+PCB-180,Clc1cc(Cl)c(cc1Cl)c2cc(Cl)c(Cl)c(Cl)c2Cl,1-octanol,n/a,0.776247117,-0.11
+Pentachlorobenzene,ClC=1C(=C(C(=C(C1)Cl)Cl)Cl)Cl,1-octanol,n/a,0.27542287,-0.56
+Pentachloronitrobenzene,ClC1=C(C(=C(C(=C1[N+](=O)[O-])Cl)Cl)Cl)Cl,1-octanol,n/a,0.104712855,-0.98
+Phenothazine,N1c2ccccc2Sc3ccccc13,1-octanol,n/a,0.117219537,-0.931
+Phenylbutazone,CCCCC1C(=O)N(N(C1=O)c2ccccc2)c3ccccc3,1-octanol,n/a,0.023227368,-1.634
+Progesterone,CC(=O)[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C,1-octanol,n/a,0.19498446,-0.71
+Propanol,C(CC)O,1-octanol,n/a,6.668067692,0.824
+Sulfamethoxazole,Cc1onc(N[S](=O)(=O)c2ccc(N)cc2)c1,1-octanol,n/a,0.006095369,-2.215
+Sulfisoxazole,Cc1noc(N[S](=O)(=O)c2ccc(N)cc2)c1C,1-octanol,n/a,0.003548134,-2.45
+Testosterone phenylacetate,CC12CCC3C(CCC4=CC(=O)CCC34C)C1CCC2OC(=O)Cc5ccccc5,1-octanol,n/a,0.107151931,-0.97
+Toluene,C1(=CC=CC=C1)C,1-octanol,n/a,4.720630413,0.674

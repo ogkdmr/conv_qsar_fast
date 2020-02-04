@@ -118,7 +118,7 @@ def parity_plot(true, pred, set_label, test_fpath, y_label, verbose=False):
 
 
 def test_model(model, data, fpath, calculate_parity=True, calculate_rocauc=True,
-               tstamp='no_time', batch_size=128, return_test_MSE=False, verbose=False):
+               tstamp='no_time', batch_size=128, verbose=False):
     """This function evaluates model performance using test data.
 
     inputs:
@@ -131,8 +131,7 @@ def test_model(model, data, fpath, calculate_parity=True, calculate_rocauc=True,
         calculate_parity - should parity plot be calculated and saved
         calculate_rocauc - should rocauc plot be calculated and saved
         tstamp - timestamp to add to the testing
-        batch_size - batch_size to use while testing
-        return_test_MSE - will it return a float or not, may be used for looking for hparams """
+        batch_size - batch_size to use while testing"""
 
     # Create folder to dump testing info to
     try:
