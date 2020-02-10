@@ -1,6 +1,7 @@
-from conv_qsar_fast.utils.neural_fp import molToGraph
-import rdkit.Chem as Chem
 import csv
+import numpy as np
+import rdkit.Chem as Chem
+from conv_qsar_fast.utils.neural_fp import molToGraph
 
 
 def get_data_full(train_paths=None, validation_path=None, test_path=None, **kwargs):
@@ -28,7 +29,7 @@ def get_data_one(data_fpath, smiles_index, y_index, delimiter,
                  y_label='', skip_line=False, molecular_attributes=False, averaging='max'):
     """
     This is a helper script to read the data files and return data sets.
-    :param averaging: if same samples appears mutiple times in the dataset what function should be used to average labels, 'mean' to take mean of all values, 'max' to leave the maximal value
+    :param averaging: if same samples appears mutiple times in the dataset what function should be used to average labels, 'mean' to take mean of all values, 'max' to leave the maximal value, 'median' to calculate median
     :param data_fpath: list of paths to all files (folds) which should be loaded
     :param smiles_index: index of column with smiles
     :param y_index: index of column with y
@@ -67,7 +68,7 @@ def get_data_one(data_fpath, smiles_index, y_index, delimiter,
     smiles = []
     mols = []
     y = []
-    smiles_counter = {}  # keep counting for clever averaging
+    smiles_ys_mapping = {}  # keeps record of all values for each SMILE
 
     for row in data:
         try:
@@ -77,21 +78,27 @@ def get_data_one(data_fpath, smiles_index, y_index, delimiter,
             this_smiles = Chem.MolToSmiles(mol, isomericSmiles=True)
             this_y = float(row[y_index])
 
-            if this_smiles in smiles_counter:
-                # important: Coley did not average TOX21, we do
-                print(f"Averaging duplicate entry for: {this_smiles}")
-                index = smiles.index(this_smiles)
-                old_value = y[index]
-                if averaging == 'mean':
-                    new_value = (this_y + old_value*smiles_counter[this_smiles]) / (1.+smiles_counter[this_smiles])
-                    smiles_counter[this_smiles] += 1
-                elif averaging == 'max':
-                    new_value = max(old_value, this_y)
-                    # updating smiles counter is not needed in this case
-                else:
-                    raise ValueError("averaging must be either 'mean' or 'max'")
-                y[index] = new_value
+            # important: Coley did not average TOX21, we do
+            if this_smiles in smiles_ys_mapping:
+                # printing the message only once per SMILE
+                if len(smiles_ys_mapping[this_smiles]) == 1:
+                    print(f"Averaging duplicate entry for: {this_smiles}")
 
+                # keep record of all the values
+                smiles_ys_mapping[this_smiles].append(this_y)
+
+                # calculating average values
+                if averaging == 'mean':
+                    new_value = np.mean(smiles_ys_mapping[this_smiles])
+                elif averaging == 'max':
+                    new_value = max(smiles_ys_mapping[this_smiles])
+                elif averaging == 'median':
+                    new_value = np.median(smiles_ys_mapping[this_smiles])
+                else:
+                    raise ValueError("averaging must be either 'mean', 'median' or 'max'")
+
+                index = smiles.index(this_smiles)
+                y[index] = new_value
             else:
                 # calculate representation and update lists
                 mat_features, mat_adjacency, mat_specialbondtypes = \
@@ -100,7 +107,7 @@ def get_data_one(data_fpath, smiles_index, y_index, delimiter,
                 mols.append((mat_features, mat_adjacency, mat_specialbondtypes))
                 y.append(this_y)  # Measured log(solubility M/L)
                 smiles.append(this_smiles)  # Smiles
-                smiles_counter[this_smiles] = 1
+                smiles_ys_mapping[this_smiles] = [this_y, ]
 
         except Exception as e:
             print('Failed to generate graph for {}, y: {}'.format(row[smiles_index], row[y_index]))
