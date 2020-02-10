@@ -108,7 +108,9 @@ if __name__ == '__main__':
                 kwargs['output_size'] = int(kwargs['output_size'])
             if 'optimizer' in kwargs:
                 kwargs['optimizer'] = kwargs['optimizer']
-             
+            if 'lr' in kwargs:
+                kwargs['lr'] = float(kwargs['lr'])
+
             if 'molecular_attributes' in config['DATA']:
                 kwargs['molecular_attributes'] = config['DATA']['molecular_attributes']
 
