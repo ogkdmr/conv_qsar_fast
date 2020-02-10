@@ -23,6 +23,8 @@ The newest version has been changed dramatically:
 - in the original code TOX21 was not averaged, now it is. New field (`averaging`) in config files appeared and can have the following values:
   - `mean` - mean value is calculated and set as label (this was originally used for Abraham, Bradley and Delaney)
   - `max` - max value is set as label (new stuff, for TOX)
+  - `median` - median value is set as a label
+- support for `lr` in `main.core.build_model` has been added. With the current setup it is preferable to use an optimiser with adaptive learning rate (ex. Adam) and set the initial learning rate using `lr`. In such setup `lr_func` should not be used as it overwrites the `lr` parameter.
 - changes in mutiple files to make the code more readable, removing files that were not used anymore
 
 ## Requirements

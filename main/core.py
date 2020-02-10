@@ -275,6 +275,7 @@ def train_model(model, data, nb_epoch=0, batch_size=1, lr_func=None, patience=10
         lr_func_string = 'def lr(epoch):\n    return {}\n'.format(lr_func)
         exec(lr_func_string)
 
+    print(f"The initial learning rate: {K.eval(model.optimizer.lr)}")
 
     # Fit (allows keyboard interrupts in the middle)
     # Because molecular graph tensors are different sizes based on N_atoms, can only do one at a time
@@ -290,8 +291,13 @@ def train_model(model, data, nb_epoch=0, batch_size=1, lr_func=None, patience=10
             for i in range(nb_epoch):
                 this_loss = []
                 this_val_loss = []
-                if lr_func: model.optimizer.lr.set_value(lr(i))
-                print('Epoch {}/{}, lr = {}'.format(i + 1, nb_epoch, K.eval(model.optimizer.lr)))
+                if lr_func:
+                    model.optimizer.lr.set_value(lr(i))
+                    print('Epoch {}/{}, lr = {}'.format(i + 1, nb_epoch, K.eval(model.optimizer.lr)))
+                else:
+                    # if we use Adam or sth and don't use lr_func, we cannot get the current learning rate
+                    print('Epoch {}/{}'.format(i + 1, nb_epoch))
+
 
                 # Run through training set
                 if verbose: print('Training...')
