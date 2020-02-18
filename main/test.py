@@ -1,15 +1,15 @@
 import rdkit.Chem as Chem
+import numpy as np
+import os
+from tqdm import tqdm
+from sklearn.metrics import roc_auc_score, roc_curve, mean_squared_error, mean_absolute_error
+import json
 from conv_qsar_fast.utils.neural_fp import molToGraph
 import conv_qsar_fast.utils.stats as stats
 import keras.backend as K 
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-import numpy as np
-import os
-from tqdm import tqdm
-from sklearn.metrics import roc_auc_score, roc_curve, mean_squared_error, mean_absolute_error
-import json
 
 
 def rocauc_plot(true, pred, set_label, test_fpath, verbose=False):
@@ -145,9 +145,11 @@ def test_model(model, data, fpath, calculate_parity=True, calculate_rocauc=True,
 
     mols_train = train['mols']
     y_train = train['y']
+    smiles_train = train['smiles']
 
     mols_val = val['mols']
     y_val = val['y']
+    smiles_val = val['smiles']
 
     mols_test = test['mols']
     y_test = test['y']
@@ -207,16 +209,18 @@ def test_model(model, data, fpath, calculate_parity=True, calculate_rocauc=True,
         with open(os.path.join(fpath, "rocauc.json"), "w") as f:
             json.dump(rocauc, f)
 
-    # Save predictions for test set
-    with open(test_fpath + '.test', 'w') as fid:
-        fid.write('{} tested {}, predicting {}\n\n'.format(fpath, tstamp, y_label))
-        fid.write('test entry\tsmiles\tactual\tpredicted\tactual - predicted\n')
-        for i in range(len(smiles_test)):
-            fid.write('{}\t{}\t{}\t{}\t{}\n'.format(i,
-                                                    smiles_test[i],
-                                                    y_test[i],
-                                                    y_test_pred[i],
-                                                    y_test[i] - y_test_pred[i]))
+    # Save predictions for each set
+    all_smiles = (smiles_train, smiles_val, smiles_test)
+    for key, smiles, trues, preds in zip(key_names, all_smiles, true_ys, pred_ys):
+        with open(test_fpath + f".{key}", 'w') as fid:
+            fid.write('{} tested {}, predicting {}\n\n'.format(fpath, tstamp, y_label))
+            fid.write('test entry\tsmiles\tactual\tpredicted\tactual - predicted\n')
+            for i in range(len(smiles)):
+                fid.write('{}\t{}\t{}\t{}\t{}\n'.format(i,
+                                                        smiles[i],
+                                                        trues[i],
+                                                        preds[i],
+                                                        trues[i] - preds[i]))
 
     return (train, val, test), mse_mae, rocauc
 
