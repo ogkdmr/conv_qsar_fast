@@ -1,13 +1,16 @@
+import keras
 from conv_qsar_fast.utils.saving import save_model_history, save_model_history_manual
 from conv_qsar_fast.utils.neural_fp import sizeAttributeVectors
 from keras.models import Model
-from keras.layers import Dense, Activation, Input, add, dot
-from keras.layers.core import Dropout, Lambda
-from keras.layers.wrappers import TimeDistributed
+from keras.layers import Dense, Activation, Input, Add, Dot
+from keras.layers import Dropout, Lambda
+from keras.layers import TimeDistributed
 from keras.callbacks import LearningRateScheduler, EarlyStopping
 from keras.optimizers import *
 import numpy as np
 import json
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 import keras.backend as K
 import theano.tensor as T
@@ -26,7 +29,7 @@ def binary_crossnetropy_no_NaN(y_true, y_pred):
 
 def build_model(embedding_size=512, lr=0.01, optimizer='adam', depth=2, hidden=0, hidden2=0, loss='mse',
                 hidden_activation='tanh', output_activation='linear', dr1=0.0, dr2=0.0, output_size=1,
-                molecular_attributes=False, use_fp=None, inner_rep=32, verbose=False):
+                molecular_attributes=False, use_fp=None, inner_rep=32, verbose=True):
     '''Generates simple embedding model to use molecular tensor as
     input in order to predict a single-valued output (i.e., yield)
 
@@ -53,9 +56,10 @@ def build_model(embedding_size=512, lr=0.01, optimizer='adam', depth=2, hidden=0
     # Graph model
     if type(use_fp) == type(None):
         F_atom, F_bond = sizeAttributeVectors(molecular_attributes = molecular_attributes)
-        mat_features = Input(shape=(None, F_atom), name="feature-matrix")  # shape = (n_atoms, n_atom_features)
-        mat_adjacency = Input(shape=(None, None), name="adjacency/self-matrix")  # shape = (n_atoms, n_atoms)
-        mat_specialbondtypes = Input(shape=(None, F_bond), name="special-bond-types")  # shape = (n_atoms, n_bond_features)
+
+        mat_features = Input(shape=(None, F_atom), name="feature-matrix")  # shape = (batch, n_atoms, n_atom_features)
+        mat_adjacency = Input(shape=(None, None), name="adjacency/self-matrix")  # shape = (batch, n_atoms, n_atoms)
+        mat_specialbondtypes = Input(shape=(None, F_bond), name="special-bond-types")  # shape = (batch, n_atoms, n_bond_features)
 
         # Lists to keep track of keras features
         all_mat_features = [mat_features]
@@ -66,50 +70,61 @@ def build_model(embedding_size=512, lr=0.01, optimizer='adam', depth=2, hidden=0
         output_contribs = []
         unactivated_features = []
         
-        sum_across_atoms       = lambda x: K.sum(x, axis = 1)
-        sum_across_atoms_shape = lambda x: (x[0], x[2])
+        sum_across_atoms       = lambda x: K.sum(x, axis = 1) #axis 1  is individual atoms dimension.
+        sum_across_atoms_shape = lambda x: (x[0], x[2]) #batch,embedding size
 
         for d in range(0, depth + 1):
             if verbose:
                 print('### DEPTH {}'.format(d))
                 print('KERAS SHAPE OF ALL_MAT_FEATURES[d]')  # Get the output contribution using all_mat_features[d]
-                print(all_mat_features[d]._keras_shape)
+                print(all_mat_features[d].shape)
                 print('K.ndim of all_mat_features')
                 print(K.ndim(all_mat_features[d]))
 
+            #Building the depth-d atom fingerprints. Shape is Batch x Atom Count X Embedding Size (512)
             output_contribs_byatom.append(
                 TimeDistributed(
                     Dense(embedding_size, activation='softmax'),
                     name='d{}-out'.format(d),
                 )(all_mat_features[d])
             )
+
+            print(output_contribs_byatom[d].shape)
+
             if verbose: print('Added depth {} output contribution (still atom-wise)'.format(d))
 
+
+            #Summing the Depth-d atom fingerprints to get the depth-n molecular fingerprint. Shape: Batch X Embedding Size
             output_contribs.append(
                 Lambda(sum_across_atoms, output_shape=sum_across_atoms_shape, name="d{}-out-sum-across-atoms".format(d))(
                     output_contribs_byatom[d]
                 )
             )
+
+            print(output_contribs[d].shape)
+
             if verbose: print('Added depth {} output contribution (summed across atoms)'.format(d))
 
             # Update if needed
+            #Computing the depth-d+1 atom features.
             if d < depth:
                 contribs_by_atom.append(
                     TimeDistributed(
-                        Dense(inner_rep, activation = 'linear'), 
+                        Dense(inner_rep, activation = 'linear'), #inner rep is the feature dimension.
                         name="d{}-atom-to-atom".format(d),
                     )(all_mat_features[d])
                 )
                 if verbose:
                     print('Calculated new atom features for each atom, d {}'.format(d))
                     print('ndim: {}'.format(K.ndim(contribs_by_atom[-1])))
-                   
+
+                print(contribs_by_atom[d].shape)
+
+
                 actual_contribs_for_atoms.append(
-                    dot(
-                        [mat_adjacency, contribs_by_atom[d]],
-                        axes=(0, 0),
+                    Dot(axes=(1,1),
                         name="d{}-multiply-atom-contribs-and-adj-mat".format(d)
-                    )
+                    )( [mat_adjacency, contribs_by_atom[d]])
                 )
 
                 if verbose:
@@ -128,11 +143,11 @@ def build_model(embedding_size=512, lr=0.01, optimizer='adam', depth=2, hidden=0
                     print('ndim: {}'.format(K.ndim(actual_bond_contribs_for_atoms[-1])))
 
                 unactivated_features.append(
-                    add(
-                        [actual_contribs_for_atoms[d], actual_bond_contribs_for_atoms[d]], 
-                        name='d{}-combine-atom-and-bond-contributions-to-new-atom-features'.format(d),
+                    Add(name='d{}-combine-atom-and-bond-contributions-to-new-atom-features'.format(d))
+                    ([actual_contribs_for_atoms[d], actual_bond_contribs_for_atoms[d]])
+
                     )
-                )
+
 
                 if verbose:
                     print('Calculated summed features, unactivated, for d = {}'.format(d))
@@ -147,7 +162,7 @@ def build_model(embedding_size=512, lr=0.01, optimizer='adam', depth=2, hidden=0
                     print('ndim: {}'.format(K.ndim(all_mat_features[-1])))
 
         if len(output_contribs) > 1:
-            FPs = add(output_contribs, name='pool-across-depths')
+            FPs = Add(name='pool-across-depths')(output_contribs)
         else:
             FPs = output_contribs[0]
 

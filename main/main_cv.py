@@ -52,8 +52,8 @@ if __name__ == '__main__':
     if 'y_index' in data_kwargs:
         data_kwargs['y_index'] = int(data_kwargs['y_index'])
 
-    if 'skipline' in data_kwargs:
-        data_kwargs['skipline'] = strtobool(data_kwargs['skipline'])
+    if 'skip_line' in data_kwargs:
+        data_kwargs['skip_line'] = strtobool(data_kwargs['skip_line'])
 
     # defining data split: cross-validation or regular train-valid-test
     if strtobool(data_kwargs['cv']):
@@ -113,6 +113,8 @@ if __name__ == '__main__':
 
             if 'molecular_attributes' in config['DATA']:
                 kwargs['molecular_attributes'] = config['DATA']['molecular_attributes']
+
+            #print(kwargs) {'embedding_size': 512, 'depth': 5, 'hidden': 50, 'dr1': 0.5, 'dr2': 0.5, 'molecular_attributes': 1}
 
             model = build_model(**kwargs)
             print('...built untrained model')
